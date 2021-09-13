@@ -1,0 +1,17 @@
+{%- assign course_dir = page.dir | split: "/" -%}
+
+{%- assign this_course = site.data.course_info -%}
+
+{%- assign course_year = course_dir[1] | times: 1 -%}
+{%- assign course_name = this_course.name -%}
+{%- assign course_name_english = this_course.english_name -%}
+{%- capture course_semester -%}
+{{ course_year }}{{ this_course.semester }}
+{%- endcapture -%}
+{%- capture course_semester_english -%}
+{{ this_course.english_semester }} {{ course_year }}
+{%- endcapture -%}
+{%- assign course_description = this_course.description -%}
+{%- capture course_base_url -%}
+{{ site.baseurl }}/{{ course_year }}
+{%- endcapture -%}
