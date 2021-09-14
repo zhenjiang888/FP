@@ -15,29 +15,29 @@ layout: home
 
 ### 内容提要及学时分配
 
-1. 函数式程序设计导引（4学时）
-    1. 课程介绍（2学时）
-    2. 函数式思维介绍（2学时）
+1. 函数式程序设计导引
+    1. 课程介绍
+    2. 函数式思维介绍
 
-2. Haskell程序设计语言（28学时）
-    1. Haskell语言入门（4学时）
-    2. Type and type class（2学时）
-    3. List comprehension（2学时）
-    4. Recursive function（2学时） 
-    5. High-order function（2学时）
-    6. Declaring types and classes（2学时）
-    7. Interactive programming（4学时）
-    8. Monads（8学时）
-    9. Lazy evaluation（2学时）
+2. Haskell程序设计语言
+    1. Haskell语言入门
+    2. Type and type class
+    3. List comprehension
+    4. Recursive function
+    5. High-order function
+    6. Declaring types and classes
+    7. Interactive programming
+    8. Monads
+    9. Lazy evaluation
 
-3. 函数式程序推理与演算（18学时）
-    1.  Agda定理证明器入门（4学时）
-    2. 程序演算概要（4学时）
-    3. Theory of Lists（4学时）
-    4. Theory of Generic Data Types（4学时）
-    5. 程序演算的应用（2学时）
+3. 函数式程序推理与演算
+    1.  Agda定理证明器入门
+    2. 程序演算概要
+    3. Theory of Lists
+    4. Theory of Generic Data Types
+    5. 程序演算的应用
 
-4. 计算机技术专题讲座（14学时，全年级所有《计算概论A》选课同学集中上课）
+4. 计算机技术专题讲座（全年级所有《计算概论A》选课同学集中上课）
 
 ### 教学方式
 
