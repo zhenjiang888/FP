@@ -1,2 +1,13 @@
-lectures: []
+lectures:
+- teacher: 胡振江
+  date: 2021/09/15
+  slides:
+  - title: "导言：函数式程序设计"
+    link: intro.pdf
+  - title: "第一章：概论"
+    link: ch1.pdf
+  assignment:
+    descriptions:
+    - text: 完成课程讲义上第一章的习题
+    due: 2021/09/22
 updates: []

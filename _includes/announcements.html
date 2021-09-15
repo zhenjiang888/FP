@@ -18,7 +18,13 @@
   {% assign updates = _updates %}
 {% endunless %}
 
-{% if all_events_sorted.size > 0 %}
+{% if include.updates_only %}
+  {% assign _count = updates.size %}
+{% else %}
+  {% assign _count = all_events_sorted.size %}
+{% endif %}
+
+{% if _count > 0 %}
 {% if include.updates_only %}
 <div style="margin-top:30px">
 {% else %}
