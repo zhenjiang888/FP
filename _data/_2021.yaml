@@ -10,4 +10,15 @@ lectures:
     descriptions:
     - text: 完成课程讲义上第一章的习题
     due: 2021/09/22
+- teacher:  张伟
+  date: 2021/09/17
+  slides:
+  - title: "第二章：函数式编程第一步"
+    link: ch2.pdf
+  - title: "初见函数式思维"
+    link: FP2021 FunctionalThinking V0.1.pdf
+  assignment:
+    descriptions:
+    - text: 完成课程讲义上第二章的习题
+    due: 2021/09/22
 updates: []
