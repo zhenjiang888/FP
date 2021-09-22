@@ -8,7 +8,7 @@ lectures:
     link: ch1.pdf
   assignment:
     descriptions:
-    - text: 完成课程讲义上第一章的习题
+    - text: 完成课程讲义上的习题
     due: 2021/09/22
 - teacher:  张伟
   date: 2021/09/17
@@ -19,6 +19,18 @@ lectures:
     link: FP2021 FunctionalThinking V0.1.pdf
   assignment:
     descriptions:
-    - text: 完成课程讲义上第二章的习题
+    - text: 完成课程讲义上的习题
     due: 2021/09/22
+- teacher:  张伟
+  date: 2021/09/22
+  slides:
+  - title: "初⻅Haskell"
+    link: FP2021 MeetingHaskell V0.1.pdf
+  assignment:
+    descriptions:
+    - text: 完成课程讲义上的习题1～3
+      link: homeworks/HW3_1.hs
+    - text: 完成课程讲义上的习题4，有困难上机课直接提问，作业按正确性评分
+      link: homeworks/HW3_2.hs
+    due: 2021/09/29
 updates: []
