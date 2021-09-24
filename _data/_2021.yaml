@@ -33,4 +33,9 @@ lectures:
     - text: 完成课程讲义上的习题4，有困难上机课直接提问，作业按正确性评分
       link: homeworks/HW3_2.hs
     due: 2021/09/29
+- teacher:  张伟
+  date: 2021/09/24
+  slides:
+  - title: "初⻅Haskell"
+    link: FP2021 MeetingHaskell V0.1.pdf
 updates: []
