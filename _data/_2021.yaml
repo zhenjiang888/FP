@@ -24,7 +24,7 @@ lectures:
 - teacher:  张伟
   date: 2021/09/22
   slides:
-  - title: "初⻅Haskell"
+  - title: "初见Haskell"
     link: FP2021 MeetingHaskell V0.1.pdf
   assignment:
     descriptions:
@@ -36,6 +36,16 @@ lectures:
 - teacher:  张伟
   date: 2021/09/24
   slides:
-  - title: "初⻅Haskell"
+  - title: "初见Haskell"
     link: FP2021 MeetingHaskell V0.1.pdf
+- teacher:  张伟
+  date: 2021/09/29
+  slides:
+  - title: "第三章：类型和类族"
+    link: ch3.pdf
+  assignment:
+    descriptions:
+    - text: 完成讲义上的习题，第3、4两题请按说明填写在注释里面
+      link: homeworks/HW4.hs
+    due: 2021/10/13
 updates: []
