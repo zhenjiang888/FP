@@ -10,7 +10,7 @@ lectures:
     descriptions:
     - text: 完成课程讲义上的习题
     due: 2021/09/22
-- teacher:  张伟
+- teacher: 张伟
   date: 2021/09/17
   slides:
   - title: "第二章：函数式编程第一步"
@@ -21,7 +21,7 @@ lectures:
     descriptions:
     - text: 完成课程讲义上的习题
     due: 2021/09/22
-- teacher:  张伟
+- teacher: 张伟
   date: 2021/09/22
   slides:
   - title: "初见Haskell"
@@ -33,12 +33,12 @@ lectures:
     - text: 完成课程讲义上的习题4，有困难上机课直接提问，作业按正确性评分
       link: homeworks/HW3_2.hs
     due: 2021/09/29
-- teacher:  张伟
+- teacher: 张伟
   date: 2021/09/24
   slides:
   - title: "初见Haskell"
     link: FP2021 MeetingHaskell V0.1.pdf
-- teacher:  张伟
+- teacher: 张伟
   date: 2021/09/29
   slides:
   - title: "第三章：类型和类族"
@@ -47,5 +47,17 @@ lectures:
     descriptions:
     - text: 完成讲义上的习题，第3、4两题请按说明填写在注释里面
       link: homeworks/HW4.hs
+    due: 2021/10/13
+- teacher: 张伟
+  date: 2021/10/08
+  slides:
+  - title: "第四章：函数定义"
+    link: ch4.pdf
+  - title: "第五章：List Comprehension"
+    link: ch5.pdf
+  assignment:
+    descriptions:
+    - text: 完成讲义上的习题
+      link: homeworks/HW5.hs
     due: 2021/10/13
 updates: []
