@@ -60,4 +60,16 @@ lectures:
     - text: 完成讲义上的习题
       link: homeworks/HW5.hs
     due: 2021/10/13
+- teacher: 张伟
+  date: 2021/10/13
+  slides:
+  - title: "第六章：递归函数"
+    link: ch6.pdf
+  - title: "第七章：高阶函数"
+    link: ch7.pdf
+  assignment:
+    descriptions:
+    - text: 完成讲义上的习题
+      link: homeworks/HW6.hs
+    due: 2021/10/20
 updates: []
