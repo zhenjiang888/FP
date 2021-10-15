@@ -1,6 +1,7 @@
-module HW5 where
+module HW6 where
 
-import Prelude hiding (and, concat)
+import Prelude hiding (and, concat, replicate, (!!), elem, filter, map)
+import Data.Char (chr)
 
 -- Problem #1: define prelude functions using recursions
 and :: [Bool] -> Bool
