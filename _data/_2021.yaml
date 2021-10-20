@@ -80,6 +80,6 @@ lectures:
   assignment:
     descriptions:
     - text: 完成讲义上的习题
-      link: homeworks/HW8.hs
+      link: homeworks/HW7.hs
     due: 2021/10/27
 updates: []
