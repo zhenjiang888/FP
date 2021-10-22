@@ -92,4 +92,14 @@ lectures:
     - text: 完成讲义上的习题
       link: homeworks/HW8.hs
     due: 2021/10/27
+- teacher: 张伟
+  date: 2021/10/22
+  slides:
+  - title: "第十章：交互式程序设计"
+    link: ch10.pdf
+  assignment:
+    description:
+    - text: 完成讲义上的习题
+      link: homeworks/HW9.hs
+    due: 2021/10/27
 updates: []
