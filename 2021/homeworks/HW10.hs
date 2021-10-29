@@ -2,16 +2,16 @@ module HW10 where
 
 -- Problem #1: Reader Monad
 -- 因为 ((->) a) 在标准库中已经实现了 Monad，所以我们使用下面这个新定义的类型代替
-newtype Reader a b = Reader { runReader :: a -> b }
+newtype Reader r a = Reader { runReader :: r -> a }
 
-instance Functor (Reader a) where
-  fmap (Reader f) = _
+instance Functor (Reader r) where
+  fmap f (Reader g) = _
 
-instance Applicative (Reader a) where
+instance Applicative (Reader r) where
   pure = _
   (<*>) = _
 
-instance Monad (Reader a) where
+instance Monad (Reader r) where
   (>>=) = _
 -- End Problem #1
 
@@ -29,7 +29,7 @@ instance Applicative Expr where
   pure = _
   (<*>) = _
 
-instance Monad where
+instance Monad Expr where
   (>>=) = _
 -- End Problem #2
 
