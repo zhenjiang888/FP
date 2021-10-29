@@ -102,4 +102,24 @@ lectures:
     - text: 完成讲义上的习题
       link: homeworks/HW9.hs
     due: 2021/10/27
+- teacher: 张伟
+  date: 2021/10/27
+  slides:
+  - title: "第十二章：Monads and More"
+    link: ch12.pdf
+  assignment:
+    descriptions:
+    - text: 完成讲义上的习题
+      link: homeworks/HW10.hs
+    due: 2021/11/3
+- teacher: 张伟
+  date: 2021/10/27
+  slides:
+  - title: "第十三章：Monadic Parser"
+    link: ch13.pdf
+  assignment:
+    descriptions:
+    - text: 完成讲义上的习题
+      link: homeworks/HW10.hs
+    due: 2021/11/3
 updates: []
