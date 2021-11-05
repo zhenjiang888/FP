@@ -11,6 +11,7 @@ instance Functor Maybe where
 
 instance Foldable Maybe where
   foldMap = _
+  foldl = _
   foldr = _
 
 foldMaybe :: Monoid a => Maybe a -> a
@@ -29,6 +30,7 @@ instance Functor Tree where
 
 instance Foldable Tree where
   foldMap = _
+  foldl = _
   foldr = _
 
 foldTree :: Monoid a => Tree a -> a
