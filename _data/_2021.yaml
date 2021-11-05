@@ -122,4 +122,21 @@ lectures:
     - text: 完成讲义上的习题
       link: homeworks/HW10.hs
     due: 2021/11/3
+- teacher: 张伟
+  date: 2021/11/3
+  slides:
+  - title: "第十四章：Foldable and Friends"
+    link: ch14.pdf
+  - title: "第十五章：计算模型：Lazy Evaluation"
+    link: ch15.pdf
+  assignment:
+    descriptions:
+    - text: 完成讲义上的习题
+      link: homeworks/HW11.hs
+    due: 2021/11/10
+- teacher: 张伟
+  date: 2021/11/5
+  slides:
+  - title: "函数式编程思想在其他编程语言中的应用"
+    link: FP in other lang V0.1.pdf
 updates: []
