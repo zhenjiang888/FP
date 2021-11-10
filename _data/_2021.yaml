@@ -111,7 +111,7 @@ lectures:
     descriptions:
     - text: 完成讲义上的习题
       link: homeworks/HW10.hs
-    due: 2021/11/3
+    due: 2021/11/03
 - teacher: 张伟
   date: 2021/10/27
   slides:
@@ -121,9 +121,9 @@ lectures:
     descriptions:
     - text: 完成讲义上的习题
       link: homeworks/HW10.hs
-    due: 2021/11/3
+    due: 2021/11/03
 - teacher: 张伟
-  date: 2021/11/3
+  date: 2021/11/03
   slides:
   - title: "第十四章：Foldable and Friends"
     link: ch14.pdf
@@ -135,14 +135,14 @@ lectures:
       link: homeworks/HW11.hs
     due: 2021/11/10
 - teacher: 张伟
-  date: 2021/11/5
+  date: 2021/11/05
   slides:
   - title: "函数式编程思想在其他编程语言中的应用"
     link: FP in other lang V0.1.pdf
 - teacher: 胡振江
   date: 2021/11/10
   slides:
-  - title: "第十六章: Introduction to Calculational Programming"
+  - title: "第十六章：Introduction to Calculational Programming"
     link: program-calculation-intro.pdf
   - title: "第十七章：Agda的基本概念(1)"
     link: Agda1.pdf
