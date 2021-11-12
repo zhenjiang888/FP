@@ -21,7 +21,7 @@ module problem-3 where
   open import Data.Nat using (ℕ; suc; zero)
   open import Data.Vec using (Vec; []; _∷_)
 
-  Matrix : Set -> ℕ -> ℕ -> Set
+  Matrix : Set → ℕ → ℕ → Set
   Matrix A n m = Vec (Vec A n) m
 
   transpose
