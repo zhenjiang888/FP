@@ -151,7 +151,15 @@ lectures:
     - text: 完成讲义上的习题
       link: homeworks/HW12.hs
     - text: 安装Agda的开发环境
+    due: 2021/11/24
+- teacher: 胡振江
+  date: 2021/11/24
+  slides:
+  - title: "第十七章：Agda的基本概念(1)"
+    link: Agda1.pdf
+  assignment:
+    descriptions:
     - text: 完成讲义上的习题
       link: homeworks/HW13.agda
-    due: 2021/11/24
+    due: 2021/12/01
 updates: []
