@@ -152,6 +152,16 @@ lectures:
       link: homeworks/HW12.hs
     - text: 安装Agda的开发环境
     due: 2021/11/24
+- teacher: 李戈
+  date: 2021/11/12
+  slides:
+  - title: 计算机的基本原理
+    link: lec1.A01-计算机的基本原理.pdf
+- teacher: 代亚非
+  date: 2021/11/19
+  slides:
+  - title: 计算机硬件系统
+    link: lec2.2021-硬件系统-代亚非.pdf
 - teacher: 胡振江
   date: 2021/11/24
   slides:
