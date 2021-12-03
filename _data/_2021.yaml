@@ -172,6 +172,21 @@ lectures:
     - text: 完成讲义上的习题
       link: homeworks/HW13.agda
     due: 2021/12/01
+- teacher: 刘譞哲
+  date: 2021/11/26
+  slides:
+  - title: 计算机软件
+    link: lec5.系统软件.pdf
+- teacher: 胡振江
+  date: 2021/12/01
+  slides:
+  - title: "第十七章：Agda的基本概念(2)"
+    link: Agda2.pdf
+  assignment:
+    descriptions:
+    - text: 完成讲义上的习题
+      link: homeworks/HW14.agda
+    due: 2021/12/08
 updates:
 - slides: "第十七章：Agda的基本概念(1)"
   link: Agda1.pdf
