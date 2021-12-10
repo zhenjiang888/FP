@@ -191,7 +191,7 @@ lectures:
   date: 2021/12/08
   slides:
   - title: "第18章：序列理论概述(1)"
-    link: Agda2.pdf
+    link: BMF1.pdf
   assignment:
     descriptions:
     - text: 完成讲义上的习题
