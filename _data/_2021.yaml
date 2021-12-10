@@ -187,6 +187,16 @@ lectures:
     - text: 完成讲义上的习题
       link: homeworks/HW14.agda
     due: 2021/12/08
+- teacher: 胡振江
+  date: 2021/12/08
+  slides:
+  - title: "第18章：序列理论概述(1)"
+    link: Agda2.pdf
+  assignment:
+    descriptions:
+    - text: 完成讲义上的习题
+      link: homeworks/HW15.agda
+    due: 2021/12/15
 updates:
 - slides: "第十七章：Agda的基本概念(1)"
   link: Agda1.pdf
