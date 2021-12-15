@@ -197,6 +197,18 @@ lectures:
     - text: 完成讲义上的习题
       link: homeworks/HW15.agda
     due: 2021/12/15
+- teacher: 胡振江
+  date: 2021/12/15
+  slides:
+  - title: "第十八章：序列理论概述(2)"
+    link: BMF1-2.pdf
+  - title: "Bird Meertens Formalism: Homomorphism"
+    link: BMF2.pdf
+  assignment:
+    descriptions:
+    - text: 完成讲义上的习题
+      link: homeworks/HW16.agda
+    due: 2021/12/22
 updates:
 - slides: "第十七章：Agda的基本概念(1)"
   link: Agda1.pdf
