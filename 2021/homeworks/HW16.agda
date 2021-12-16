@@ -1,5 +1,30 @@
 module HW16 where
 
+-- How to type those Unicode characters:
+-- →   \->
+-- ≡   \==
+-- ≢   \==n
+-- ⟨   \<
+-- ⟩   \>
+-- ∎   \qed
+-- ∘   \o
+-- ∷   \::
+-- ℕ   \bN
+-- ⊕   \oplus
+-- ˡ   \^l       (4th candidate, use your right arrow key to select)
+-- ʳ   \^r       (4th candidate, use your right arrow key to select)
+-- ₁   \_1
+-- ×   \x
+-- ∀   \all
+-- Σ   \Sigma
+-- ∃   \ex
+-- ⊆   \subseteq
+-- ≤   \le
+-- ⊔   \sqcup
+-- ¬   \neg
+-- ⊥   \bot
+-- ∈   \in
+
 import Relation.Binary.PropositionalEquality as Eq
 open Eq using (_≡_; _≢_; refl; trans; sym; cong; cong-app; subst)
 open Eq.≡-Reasoning using (begin_; _≡⟨⟩_; step-≡; _∎)
