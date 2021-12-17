@@ -31,6 +31,38 @@ open Eq.≡-Reasoning using (begin_; _≡⟨⟩_; step-≡; _∎)
 
 open import Function using (_∘_)
 
+module monoid where
+  record IsMonoid {A : Set} (e : A) (_⊕_ : A → A → A) : Set where
+    field
+      assoc : ∀ x y z → (x ⊕ y) ⊕ z ≡ x ⊕ (y ⊕ z)
+      identityˡ : ∀ x → e ⊕ x ≡ x
+      identityʳ : ∀ x → x ⊕ e ≡ x
+
+  open IsMonoid public
+
+  open import Data.Nat using (_+_)
+  open import Data.Nat.Properties using (+-assoc; +-identityˡ; +-identityʳ)
+  ℕ-add-is-monoid : IsMonoid 0 _+_
+  ℕ-add-is-monoid .assoc = +-assoc
+  ℕ-add-is-monoid .identityˡ = +-identityˡ
+  ℕ-add-is-monoid .identityʳ = +-identityʳ
+
+  open import Data.Nat using (_⊔_)
+  open import Data.Nat.Properties using (⊔-assoc; ⊔-identityˡ; ⊔-identityʳ)
+  ℕ-⊔-is-monoid : IsMonoid 0 _⊔_
+  ℕ-⊔-is-monoid .assoc = ⊔-assoc
+  ℕ-⊔-is-monoid .identityˡ = ⊔-identityˡ
+  ℕ-⊔-is-monoid .identityʳ = ⊔-identityʳ
+
+  open import Data.List using (List; _++_; [])
+  open import Data.List.Properties using (++-assoc; ++-identityˡ; ++-identityʳ)
+  List-++-is-monoid : ∀ {A : Set} → IsMonoid {List A} [] _++_
+  List-++-is-monoid .assoc = ++-assoc
+  List-++-is-monoid .identityˡ = ++-identityˡ
+  List-++-is-monoid .identityʳ = ++-identityʳ
+
+open monoid
+
 module MSS (
     extensionality : ∀ {A : Set} {B : A → Set}
         {f g : (x : A) → B x}
@@ -39,8 +71,8 @@ module MSS (
       → f ≡ g
   ) where
 
-  open import Data.List using (List; []; _∷_; [_]; _++_; foldl; foldr; map; scanl; scanr)
   open import Data.Nat using (ℕ; _+_; zero; suc; _⊔_)
+  open import Data.List using (List; []; _∷_; [_]; _++_; foldl; foldr; map; scanl; scanr)
 
   inits : ∀ {A : Set} → List A → List (List A)
   inits = scanl _++_ [] ∘ map [_]
@@ -62,35 +94,6 @@ module MSS (
 
   mss : List ℕ → ℕ
   mss = maximum ∘ map sum ∘ segs
-
-  module monoid where
-    record IsMonoid {A : Set} (e : A) (_⊕_ : A → A → A) : Set where
-      field
-        assoc : ∀ x y z → (x ⊕ y) ⊕ z ≡ x ⊕ (y ⊕ z)
-        identityˡ : ∀ x → e ⊕ x ≡ x
-        identityʳ : ∀ x → x ⊕ e ≡ x
-
-    open IsMonoid public
-
-    open import Data.Nat.Properties using (+-assoc; +-identityˡ; +-identityʳ)
-    ℕ-add-is-monoid : IsMonoid 0 _+_
-    ℕ-add-is-monoid .assoc = +-assoc
-    ℕ-add-is-monoid .identityˡ = +-identityˡ
-    ℕ-add-is-monoid .identityʳ = +-identityʳ
-
-    open import Data.Nat.Properties using (⊔-assoc; ⊔-identityˡ; ⊔-identityʳ)
-    ℕ-⊔-is-monoid : IsMonoid 0 _⊔_
-    ℕ-⊔-is-monoid .assoc = ⊔-assoc
-    ℕ-⊔-is-monoid .identityˡ = ⊔-identityˡ
-    ℕ-⊔-is-monoid .identityʳ = ⊔-identityʳ
-
-    open import Data.List.Properties using (++-assoc; ++-identityˡ; ++-identityʳ)
-    List-++-is-monoid : ∀ {A : Set} → IsMonoid {List A} [] _++_
-    List-++-is-monoid .assoc = ++-assoc
-    List-++-is-monoid .identityˡ = ++-identityˡ
-    List-++-is-monoid .identityʳ = ++-identityʳ
-
-  open monoid
 
   -- Did you know there are plenty of useful theorems in the standard library?
   open import Data.Nat.Properties using (+-distribˡ-⊔; +-distribʳ-⊔)
@@ -137,24 +140,23 @@ module MSS (
   -- 'mss' is proven to be correct if we can prove the following two theorems:
   --   open import Data.Product using (_×_; ∃-syntax)
   --   mss-is-max : ∀ {xs ys} → ys ⊆ xs → sum ys ≤ mss xs
-  --   mss-is-max = ?
   --   mss-exists : ∀ {xs} → ∃[ ys ] ys ⊆ xs × sum ys ≡ mss xs
-  --   mss-exists = ?
 
 module BMF2-1 where
 
   open import Data.Product using (_×_; _,_; Σ-syntax; proj₁)
+  open import Data.Nat using (ℕ; _+_; zero; suc)
   open import Data.List using (List; []; _∷_; [_]; _++_)
   import Data.List using (map)
+  open import Relation.Nullary using (¬_)
 
-  -- this reduce works on non-empty lists
   -- remark: 'Σ[ xs ∈ List A ] xs ≢ []' means
   --   those 'xs ∈ List A' such that 'xs ≢ []'
-  reduce : ∀ {A : Set}
-    → (_⊕_ : A → A → A)
-    → Σ[ xs ∈ List A ] xs ≢ []
-      ------------------------
-    → A
+  NList : (A : Set) → Set
+  NList A = Σ[ xs ∈ List A ] xs ≢ []
+
+  -- this reduce works on non-empty lists
+  reduce : ∀ {A : Set} → (_⊕_ : A → A → A) → NList A → A
   reduce {A} _⊕_ = λ (xs , N) → helper xs N
     module Reduce where
     helper : (xs : List A) → xs ≢ [] → A
@@ -164,16 +166,12 @@ module BMF2-1 where
 
   -- this map works on non-empty lists
   -- and it produces non-empty lists
-  map : ∀ {A B : Set}
-    → (f : A → B)
-    → Σ[ xs ∈ List A ] xs ≢ []
-      ------------------------
-    → Σ[ ys ∈ List B ] ys ≢ []
+  map : ∀ {A B : Set} → (f : A → B) → NList A → NList B
   map f ([] , N) with () ← N refl
   map f (x ∷ xs , _) = f x ∷ Data.List.map f xs , λ()
 
   -- 1. prove 'split' is a homomorphism
-  split : ∀ {A : Set} → Σ[ xs ∈ List A ] xs ≢ [] → List A × A
+  split : ∀ {A : Set} → NList A → List A × A
   split = reduce ? ∘ map ?
 
   -- to verify your 'split' is correct. after defining 'split', proving the following
@@ -187,8 +185,11 @@ module BMF2-1 where
   --     in proj₁ xs ≡ ys ++ [ z ]
 
   -- 2. prove 'init' is not a homomorphism
-  init : ∀ {A : Set} → Σ[ xs ∈ List A ] xs ≢ [] → List A
-  init = proj₁ ∘ split
+  --    let's pretend 'init [] ≡ []' to make the termination checker happy
+  init : ∀ {A : Set} → List A → List A
+  init [] = []
+  init (x ∷ []) = []
+  init (x ∷ xs) = x ∷ init xs
 
   -- This part might be too hard for you to prove in Agda, so you can choose
   -- to write this part in natural language. If so, comment out (or remove)
@@ -200,29 +201,46 @@ module BMF2-1 where
   -- (3) falsity '⊥' is an empty data type, it has no constructors ...
   -- (4) ... which means we can pattern match with absurd pattern '()'
 
-  init-is-not-homomorphism : ∀ {A} {f g} → init {A} ≢ reduce f ∘ map g
+  record IsHomomorphism
+    {A : Set} {a : A} {_⊕_ : A → A → A} (m₁ : IsMonoid a _⊕_)
+    {B : Set} {b : B} {_⊗_ : B → B → B} (m₂ : IsMonoid b _⊗_)
+    (f : A → B) : Set where
+    field
+      distrib : (x y : A) → f (x ⊕ y) ≡ f x ⊗ f y
+
+  open IsHomomorphism
+
+  init-is-not-homomorphism :
+    ∀ {e : List ℕ} {_⊗_} (m : IsMonoid e _⊗_)
+    → ¬ IsHomomorphism List-++-is-monoid m init
   init-is-not-homomorphism = ?
 
   -- Hint: you might want to follow this guideline below if you get stuck.
   --
   -- Step 1: interpret the theorem
-  --   init {A} ≢ reduce f ∘ map g
+  --   ¬ IsHomomorphism List-++-is-monoid m init
   -- is just another way of saying
-  --   init {A} ≡ reduce f ∘ map g → ⊥
+  --   IsHomomorphism List-++-is-monoid m init → ⊥
   -- (proof by contradiction)
   --
   -- Step 2: get your premise
   -- You want to derive contradiction from the premise, so the first thing
   -- to do is get the premise (add it as an argument):
-  --   init-is-not-homomorphism E = ?
-  -- Now 'E' is our premise, with the type 'init {A} ≡ reduce f ∘ map g'
+  --   init-is-not-homomorphism {e} {_⊗_} m H = ?
+  -- Now we have the following premises:
+  --   m : IsMonoid e _⊗_
+  --   H : IsHomomorphism List-++-is-monoid m init
   --
   -- Step 3: derive absurd results
-  -- Pass in some example to your premise 'E', and try to get some absurd
-  -- results such as 'H : 0 ≡ 42'.
+  -- Pass in some example to your premises, and try to get some absurd
+  -- results such as 'K : [ 0 ] ≡ [ 42 ]'.
   --
-  -- Step 4: make use of that absurd result
-  -- Use the result 'H' from Step 3, apply it to '(λ())':
-  --   (λ()) H
-  -- Just use this expression as the return value. This should do the trick,
-  -- because "ex falso quodlibet", or "From falsehood, anything follows."
+  -- Step 4: show the absurdity by proving the negation
+  -- e.g. for 'K : [ 0 ] ≡ [ 42 ]', write the following:
+  --   ¬K : [ 0 ] ≢ [ 42 ]
+  --   ¬K ()
+  --
+  -- Step 5: make use of that absurd result
+  -- Use the result 'K' from Step 3, apply it to '¬K':
+  --   ¬K K
+  -- Just use this expression as the return value.
