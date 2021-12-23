@@ -219,7 +219,7 @@ lectures:
   assignment:
     descriptions:
     - text: 完成讲义上的习题
-      link: homeworks/HW16.agda
+      link: homeworks/HW17.hs
     due: 2021/12/29
 updates:
 - slides: "第十七章：Agda的基本概念(1)"
