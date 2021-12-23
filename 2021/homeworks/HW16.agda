@@ -31,33 +31,56 @@ open Eq.≡-Reasoning using (begin_; _≡⟨⟩_; step-≡; _∎)
 
 open import Function using (_∘_)
 
+module semigroup where
+  record IsSemigroup {A : Set} (_⊕_ : A → A → A) : Set where
+    field assoc : ∀ x y z → (x ⊕ y) ⊕ z ≡ x ⊕ (y ⊕ z)
+
+  open IsSemigroup public
+
+  open import Data.Nat using (_+_)
+  open import Data.Nat.Properties using (+-assoc)
+  ℕ-add-is-semigroup : IsSemigroup _+_
+  ℕ-add-is-semigroup .assoc = +-assoc
+
+  open import Data.Nat using (_⊔_)
+  open import Data.Nat.Properties using (⊔-assoc)
+  ℕ-⊔-is-semigroup : IsSemigroup _⊔_
+  ℕ-⊔-is-semigroup .assoc = ⊔-assoc
+
+  open import Data.List using (List; _++_; [])
+  open import Data.List.Properties using (++-assoc)
+  List-++-is-semigroup : ∀ {A : Set} → IsSemigroup {List A} _++_
+  List-++-is-semigroup .assoc = ++-assoc
+
+open semigroup
+
 module monoid where
   record IsMonoid {A : Set} (e : A) (_⊕_ : A → A → A) : Set where
     field
-      assoc : ∀ x y z → (x ⊕ y) ⊕ z ≡ x ⊕ (y ⊕ z)
+      is-semigroup : IsSemigroup _⊕_
       identityˡ : ∀ x → e ⊕ x ≡ x
       identityʳ : ∀ x → x ⊕ e ≡ x
 
   open IsMonoid public
 
   open import Data.Nat using (_+_)
-  open import Data.Nat.Properties using (+-assoc; +-identityˡ; +-identityʳ)
+  open import Data.Nat.Properties using (+-identityˡ; +-identityʳ)
   ℕ-add-is-monoid : IsMonoid 0 _+_
-  ℕ-add-is-monoid .assoc = +-assoc
+  ℕ-add-is-monoid .is-semigroup = ℕ-add-is-semigroup
   ℕ-add-is-monoid .identityˡ = +-identityˡ
   ℕ-add-is-monoid .identityʳ = +-identityʳ
 
   open import Data.Nat using (_⊔_)
-  open import Data.Nat.Properties using (⊔-assoc; ⊔-identityˡ; ⊔-identityʳ)
+  open import Data.Nat.Properties using (⊔-identityˡ; ⊔-identityʳ)
   ℕ-⊔-is-monoid : IsMonoid 0 _⊔_
-  ℕ-⊔-is-monoid .assoc = ⊔-assoc
+  ℕ-⊔-is-monoid .is-semigroup = ℕ-⊔-is-semigroup
   ℕ-⊔-is-monoid .identityˡ = ⊔-identityˡ
   ℕ-⊔-is-monoid .identityʳ = ⊔-identityʳ
 
   open import Data.List using (List; _++_; [])
-  open import Data.List.Properties using (++-assoc; ++-identityˡ; ++-identityʳ)
+  open import Data.List.Properties using (++-identityˡ; ++-identityʳ)
   List-++-is-monoid : ∀ {A : Set} → IsMonoid {List A} [] _++_
-  List-++-is-monoid .assoc = ++-assoc
+  List-++-is-monoid .is-semigroup = List-++-is-semigroup
   List-++-is-monoid .identityˡ = ++-identityˡ
   List-++-is-monoid .identityʳ = ++-identityʳ
 
@@ -98,7 +121,7 @@ module MSS (
   -- Did you know there are plenty of useful theorems in the standard library?
   open import Data.Nat.Properties using (+-distribˡ-⊔; +-distribʳ-⊔)
   -- +-distribˡ-⊔ : ∀ x y z → x + (y ⊔ z) ≡ (x + y) ⊔ (x + z)
-  -- +-distribˡ-⊔ : ∀ x y z → (x ⊔ y) + z ≡ (x + z) ⊔ (y + z)
+  -- +-distribʳ-⊔ : ∀ z x y → (x ⊔ y) + z ≡ (x + z) ⊔ (y + z)
 
   mss-fast : List ℕ → ℕ
   mss-fast = ?
@@ -147,49 +170,74 @@ module BMF2-1 where
   open import Data.Product using (_×_; _,_; Σ-syntax; proj₁)
   open import Data.Nat using (ℕ; _+_; zero; suc)
   open import Data.List using (List; []; _∷_; [_]; _++_)
-  import Data.List using (map)
   open import Relation.Nullary using (¬_)
 
-  -- remark: 'Σ[ xs ∈ List A ] xs ≢ []' means
-  --   those 'xs ∈ List A' such that 'xs ≢ []'
-  NList : (A : Set) → Set
-  NList A = Σ[ xs ∈ List A ] xs ≢ []
+  infixr 5 _∷′_
+  data NList (A : Set) : Set where
+    [_]′ : (x : A) → NList A
+    _∷′_ : (x : A) → (xs : NList A) → NList A
+
+  infixr 5 _++′_
+  _++′_ : ∀ {A : Set} → NList A → NList A → NList A
+  [ x ]′ ++′ ys = x ∷′ ys
+  (x ∷′ xs) ++′ ys = x ∷′ xs ++′ ys
+
+  ++′-assoc : ∀ {A : Set} (xs ys zs : NList A) → (xs ++′ ys) ++′ zs ≡ xs ++′ ys ++′ zs
+  ++′-assoc [ x ]′    ys zs = refl
+  ++′-assoc (x ∷′ xs) ys zs = cong (x ∷′_) (++′-assoc xs ys zs)
+
+  NList-++′-is-semigroup : ∀ {A : Set} → IsSemigroup {NList A} _++′_
+  NList-++′-is-semigroup .assoc = ++′-assoc
 
   -- this reduce works on non-empty lists
   reduce : ∀ {A : Set} → (_⊕_ : A → A → A) → NList A → A
-  reduce {A} _⊕_ = λ (xs , N) → helper xs N
-    module Reduce where
-    helper : (xs : List A) → xs ≢ [] → A
-    helper [] N with () ← N refl
-    helper (x ∷ []) _ = x
-    helper (x ∷ xs@(_ ∷ _)) _ = x ⊕ helper xs (λ())
+  reduce {A} _⊕_ [ x ]′ = x
+  reduce {A} _⊕_ (x ∷′ xs) = x ⊕ reduce _⊕_ xs
 
   -- this map works on non-empty lists
   -- and it produces non-empty lists
   map : ∀ {A B : Set} → (f : A → B) → NList A → NList B
-  map f ([] , N) with () ← N refl
-  map f (x ∷ xs , _) = f x ∷ Data.List.map f xs , λ()
+  map f [ x ]′ = [ f x ]′
+  map f (x ∷′ xs) = f x ∷′ map f xs
+
+  record IsHomomorphism
+    {A : Set} {_⊕_ : A → A → A} (m₁ : IsSemigroup _⊕_)
+    {B : Set} {_⊗_ : B → B → B} (m₂ : IsSemigroup _⊗_)
+    (f : A → B) : Set where
+    field
+      distrib : (x y : A) → f (x ⊕ y) ≡ f x ⊗ f y
+
+  open IsHomomorphism
 
   -- 1. prove 'split' is a homomorphism
   split : ∀ {A : Set} → NList A → List A × A
   split = reduce ? ∘ map ?
 
+  -- bonus: you may also want to prove the following theorems:
+  --   _⊗_ : ∀ {A : Set} → List A × A → List A × A → List A × A
+  --   R-is-semigroup : ∀ {A : Set} → IsSemigroup {List A × A} _⊗_
+  --   split-is-homomorphism : ∀ {A : Set} → IsHomomorphism NList-++′-is-semigroup R-is-semigroup (split {A})
+  -- Alternatively, you may find it much more desirable (satisfactory) to prove the general case:
+  --   reduce-map-is-homomorphism : ∀ {A B : Set}
+  --     → (f : A → B)
+  --     → (_⊗_ : B → B → B)
+  --     → (B-⊗-is-semigroup : IsSemigroup _⊗_)
+  --       ---------------------------------------------------------------------------
+  --     → IsHomomorphism NList-++′-is-semigroup B-⊗-is-semigroup (reduce _⊗_ ∘ map f)
+
   -- to verify your 'split' is correct. after defining 'split', proving the following
   -- should be as easy as filling in 'refl'.
-  split-is-correct : split (1 ∷ 2 ∷ 3 ∷ 4 ∷ [] , λ()) ≡ (1 ∷ 2 ∷ 3 ∷ [] , 4)
+  split-is-correct : split (1 ∷′ 2 ∷′ 3 ∷′ [ 4 ]′) ≡ (1 ∷ 2 ∷ 3 ∷ [] , 4)
   split-is-correct = ?
 
   -- bonus: find a proper way to prove your split is indeed correct:
   -- split-is-indeed-correct : ∀ {A} xs
   --   → let (ys , z) = split {A} xs
-  --     in proj₁ xs ≡ ys ++ [ z ]
+  --     in xs ≡ ys ++ [ z ]
 
   -- 2. prove 'init' is not a homomorphism
-  --    let's pretend 'init [] ≡ []' to make the termination checker happy
-  init : ∀ {A : Set} → List A → List A
-  init [] = []
-  init (x ∷ []) = []
-  init (x ∷ xs) = x ∷ init xs
+  init : ∀ {A : Set} → NList A → List A
+  init = proj₁ ∘ split
 
   -- This part might be too hard for you to prove in Agda, so you can choose
   -- to write this part in natural language. If so, comment out (or remove)
@@ -201,35 +249,25 @@ module BMF2-1 where
   -- (3) falsity '⊥' is an empty data type, it has no constructors ...
   -- (4) ... which means we can pattern match with absurd pattern '()'
 
-  record IsHomomorphism
-    {A : Set} {a : A} {_⊕_ : A → A → A} (m₁ : IsMonoid a _⊕_)
-    {B : Set} {b : B} {_⊗_ : B → B → B} (m₂ : IsMonoid b _⊗_)
-    (f : A → B) : Set where
-    field
-      distrib : (x y : A) → f (x ⊕ y) ≡ f x ⊗ f y
-
-  open IsHomomorphism
-
-  init-is-not-homomorphism :
-    ∀ {e : List ℕ} {_⊗_} (m : IsMonoid e _⊗_)
-    → ¬ IsHomomorphism List-++-is-monoid m init
-  init-is-not-homomorphism = ?
+  init-is-not-homomorphism : ∀ {_⊗_} (m : IsSemigroup _⊗_)
+    → ¬ IsHomomorphism NList-++′-is-semigroup m (init {ℕ})
+  init-is-not-homomorphism {_⊗_} m H = ?
 
   -- Hint: you might want to follow this guideline below if you get stuck.
   --
   -- Step 1: interpret the theorem
-  --   ¬ IsHomomorphism List-++-is-monoid m init
+  --   ¬ IsHomomorphism NList-++′-is-semigroup m (init {ℕ})
   -- is just another way of saying
-  --   IsHomomorphism List-++-is-monoid m init → ⊥
+  --   IsHomomorphism NList-++′-is-semigroup m (init {ℕ}) → ⊥
   -- (proof by contradiction)
   --
   -- Step 2: get your premise
   -- You want to derive contradiction from the premise, so the first thing
   -- to do is get the premise (add it as an argument):
-  --   init-is-not-homomorphism {e} {_⊗_} m H = ?
+  --   init-is-not-homomorphism {_⊗_} m H = ?
   -- Now we have the following premises:
-  --   m : IsMonoid e _⊗_
-  --   H : IsHomomorphism List-++-is-monoid m init
+  --   m : IsSemigroup _⊗_
+  --   H : IsHomomorphism NList-++′-is-semigroup m (init {ℕ})
   --
   -- Step 3: derive absurd results
   -- Pass in some example to your premises, and try to get some absurd
