@@ -220,7 +220,18 @@ lectures:
     descriptions:
     - text: 完成讲义上的习题
       link: homeworks/HW17.hs
-    due: 2021/12/29
+    due: 2021/01/05
+- teacher: 胡振江
+  date: 2021/12/24
+  slides:
+  - title: "Bird Meertens Formalism: Fusion and Tupling"
+    link: BMF3.pdf
+  - title: "Bird Meertens Formalism: An Application"
+    link: AP1.pdf
+  assignment:
+    descriptions:
+    - text: 完成讲义上的习题BMF3-1、BMF3-2
+    due: 2021/01/05
 updates:
 - slides: "第十七章：Agda的基本概念(1)"
   link: Agda1.pdf
