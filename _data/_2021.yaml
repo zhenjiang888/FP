@@ -236,6 +236,6 @@ updates:
 - slides: "第十七章：Agda的基本概念(1)"
   link: Agda1.pdf
   date: 2021/11/24
-- slides: "第十七章：Agda的基本概念(1)"
+- slides: "Bird Meertens Formalism: Homomorphism"
   link: BMF2-1.pdf
   date: 2021/12/22
