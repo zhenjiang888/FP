@@ -230,7 +230,10 @@ lectures:
     link: AP1.pdf
   assignment:
     descriptions:
-    - text: 完成讲义上的习题BMF3-1、BMF3-2
+    - text: 完成讲义上的习题BMF3-1
+      link: homeworks/HW18.agda
+    - text: 完成讲义上的习题BMF3-2
+      link: homeworks/HW19.hs
     due: 2021/01/05
 updates:
 - slides: "第十七章：Agda的基本概念(1)"
