@@ -54,7 +54,7 @@ layout: default
         <div style="width:65%; float: left">
             <div class="profile-pic-gallary ">
                 <h2>课程助教</h2>
-                {% for ta_name in this_course.teaching_assistants %}
+                {% for ta_name in site.data[_course_year].teaching_assistants %}
                 {% assign ta = site.data.people.teaching_assistants[ta_name] %}
                 <div class="image--cover-container">
                     <img src="{{ ta.profile_pic | prepend: site.baseurl }}" class="image--cover">
