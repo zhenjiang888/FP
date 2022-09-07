@@ -1,3 +1,14 @@
 teaching_assistants: [关智超]
-lectures: []
+lectures: 
+- teacher: 胡振江
+  date: 2022/09/07
+  slides:
+  - title: "导言：函数式程序设计"
+    link: intro.pdf
+  - title: "第一章：概论"
+    link: ch1.pdf
+  assignment:
+    descriptions:
+    - text: 【1】完成课程讲义上的习题
+    due: 2022/09/13
 updates: []
