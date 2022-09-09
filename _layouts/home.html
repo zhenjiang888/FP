@@ -20,7 +20,7 @@ layout: default
         {% for year in this_course.years %}
         <li>
             {% if year != course_year %}
-            <a href="/{{ year }}">{{ year }}{{ this_course.semester }}</a>
+            <a href="/FP/{{ year }}">{{ year }}{{ this_course.semester }}</a>
             {% else %}
             {{ year }}{{ this_course.semester }}
             {% endif %}
