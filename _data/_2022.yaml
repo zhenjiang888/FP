@@ -21,6 +21,8 @@ lectures:
   slides:
   - title: "第2.1章：初⻅函数式思维——若干补充说明"
     link: ch02.1 functional thinking - supp.pdf
+  - title: "第2.2章：初⻅Haskell"
+    link: ch02.2 meeting haskell - 未完待续.pdf
   assignment:
     descriptions:
     - text: 【2】完成课程讲义上的习题1~3
