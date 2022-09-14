@@ -16,4 +16,18 @@ lectures:
   slides:
   - title: "第2.1章：初⻅函数式思维"
     link: ch2-1.pdf
+- teacher: 张伟
+  date: 2022/09/14
+  slides:
+  - title: "第2.1章：初⻅函数式思维——若干补充说明"
+    link: ch02.1 functional thinking - supp.pdf
+  assignment:
+    descriptions:
+    - text: 【2】完成课程讲义上的习题1~3
+      link: homeworks/HW2.hs
+    - text: 请使用提供的模板文件，对其的使用可以查看
+      linktitle: 此页面
+      link: /FP/2022/homeworks/HW2_README
+    - text: 请注意作业提交要求！
+    due: 2022/09/20
 updates: []
