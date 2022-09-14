@@ -35,7 +35,11 @@ layout: page
         {% if desc.text %}
         {{ desc.text }}
         {% if desc.link %}
-        ：<a href="{{ desc.link }}">{{ desc.link }}</a>
+          {% if desc.linktitle %}
+            <a href="{{ desc.link }}">{{ desc.linktitle }}</a>
+          {% else %}
+            ：<a href="{{ desc.link }}">{{ desc.link }}</a>
+          {% endif %}
         {% endif %}
         {% else %}
         {{ desc }}
