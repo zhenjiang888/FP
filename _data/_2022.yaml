@@ -42,6 +42,8 @@ lectures:
     - text: 【3】完成课程讲义上的习题4
       link: homeworks/HW3.hs
     - text: 使用GHC编译并运行课件上的交互式程序
-    - text: 安装Stack并运行课件上的程序
+    - text: 安装Stack并运行课件上的程序，可以参考
+      linktitle: 此页面
+      link: /FP/2022/homeworks/stack
     due: 2022/09/20
 updates: []
