@@ -71,4 +71,12 @@ stack build
 ```
 如果成功编译了，则可以通过吃鸡腿饭庆祝一下。如果出现`commitBuffer: invalid argument (invalid character)`，请将作业项目移至一个**没有中文**的路径。其他情况，请联系助教。
 
+完成作业时首先需要添加`random`库，方法是在项目中的`package.yaml`文件中修改依赖：
+```
+dependencies:
+- base >= 4.7 && < 5
+- random
+```
+否则会找不到相关的函数。
+
 *以上教程参考[在Windows上安装Haskell](https://zhuanlan.zhihu.com/p/259393917)，想了解为什么这样操作，可以阅读此文章。*
