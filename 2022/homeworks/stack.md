@@ -13,6 +13,12 @@ ghcup install stack
 
 ## 换源
 
+为了让 stack 生成相应的文件夹，首先
+```
+stack --resolver lts setup
+```
+国内的网这一步一定是会失败的，之后
+
 - MacOS 下打开编辑`~/.stack/config.yaml`
 - Windows 下编辑`%APPDATA%/stack/config.yaml`（打开方式为在资源管理器的地址栏输入`%APPDATA%/stack` 回车后打开其中的 `config.yaml` 文件），在末尾加入以下内容
 
