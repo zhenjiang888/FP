@@ -32,4 +32,16 @@ lectures:
       link: /FP/2022/homeworks/HW2_README
     - text: 请注意作业提交要求！
     due: 2022/09/20
+- teacher: 张伟
+  date: 2022/09/16
+  slides:
+  - title: "第2.2章：初⻅Haskell"
+    link: ch02.2 meeting haskell.pdf
+  assignment:
+    descriptions:
+    - text: 【3】完成课程讲义上的习题4
+      link: homeworks/HW3.hs
+    - text: 使用GHC编译并运行课件上的交互式程序
+    - text: 安装Stack并运行课件上的程序
+    due: 2022/09/20
 updates: []
