@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # 如何安装 Stack
 
 在安装好 ghcup 后，在命令行中通过以下命令安装 stack
