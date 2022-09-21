@@ -48,7 +48,7 @@ package-indices:
     ignore-expiry: true
 ```
 
-而后下载[文件](https://mirrors.ustc.edu.cn/stackage/stackage-content/stack/global-hints.yaml)移动到
+而后下载[这个文件](https://mirrors.ustc.edu.cn/stackage/stackage-content/stack/global-hints.yaml)移动到
 - macOS 下 `~/.stack/pantry` 文件夹
 - Windows 下 `%APPDATA%\stack\pantry` 文件夹
 并**重命名该文件**为`global-hints-cache.yaml`。

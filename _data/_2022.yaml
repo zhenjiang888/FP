@@ -46,4 +46,16 @@ lectures:
       linktitle: 此页面
       link: /FP/2022/homeworks/stack
     due: 2022/09/20
+- teacher: 张伟
+  date: 2022/09/21
+  slides:
+  - title: "第3章：类型与类簇"
+    link: ch03 type and type class.pdf
+  - title: "第4章：函数的定义"
+    link: ch04 function definition.pdf
+  assignment:
+    descriptions:
+    - text: 【4】完成第3章课程讲义上的习题
+      link: homeworks/HW4.hs
+    due: 2022/09/27
 updates: []
