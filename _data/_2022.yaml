@@ -58,4 +58,14 @@ lectures:
     - text: 【4】完成第3章课程讲义上的习题
       link: homeworks/HW4.hs
     due: 2022/09/27
+- teacher: 张伟
+  date: 2022/09/23
+  slides:
+  - title: "第4章：函数的定义"
+    link: ch04 function definition.pdf
+  assignment:
+    descriptions:
+    - text: 【5】完成第4章课程讲义上的习题
+      link: homeworks/HW5.hs
+    due: 2022/09/27
 updates: []
