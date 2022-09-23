@@ -30,10 +30,7 @@ luhn = _
 
 -- Problem #3: Caesar crack
 crack :: String -> String
-crack xs = encode (-factor) xs
-  where factor = position (minimum chitab) chitab
-        chitab = [chisqr (rotate n table') table | n <- [0..25]]
-        table' = freqs xs
+crack = _
 
 freqs :: String -> [Float]
 freqs = _
