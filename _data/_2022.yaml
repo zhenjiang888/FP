@@ -61,11 +61,13 @@ lectures:
 - teacher: 张伟
   date: 2022/09/23
   slides:
-  - title: "第4章：函数的定义"
-    link: ch04 function definition.pdf
+  - title: "第5章：List Comprehension"
+    link: ch05 list comprehension.pdf
+  - title: "第6章：递归函数"
+    link: ch06 recursive function.pdf
   assignment:
     descriptions:
-    - text: 【5】完成第4章课程讲义上的习题
+    - text: 【5】完成第4章和第5章课程讲义上的习题
       link: homeworks/HW5.hs
     due: 2022/09/27
 updates: []

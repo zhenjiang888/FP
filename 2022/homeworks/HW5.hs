@@ -1,5 +1,9 @@
 module HW5 where
 
+import           Data.Char (chr, isLower, ord)
+
+-- Ch.04
+
 -- Problem #1: define safetail
 -- Part #1.1: use a conditional expression
 safetail1 :: [a] -> [a]
@@ -22,14 +26,20 @@ luhn :: Int -> Int -> Int -> Int -> Bool
 luhn = _
 -- End Problem #2
 
+-- Ch.05
+
 -- Problem #3: Caesar crack
 crack :: String -> String
 crack xs = encode (-factor) xs
   where factor = position (minimum chitab) chitab
         chitab = [chisqr (rotate n table') table | n <- [0..25]]
         table' = freqs xs
-        freqs = _
-        chisqr = _
+
+freqs :: String -> [Float]
+freqs = _
+
+chisqr :: [Float] -> [Float] -> Float
+chisqr = _
 -- End Problem #3
 
 -- Problem #4: Pythagorean triples
