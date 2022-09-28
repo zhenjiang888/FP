@@ -70,4 +70,16 @@ lectures:
     - text: 【5】完成第4章和第5章课程讲义上的习题
       link: homeworks/HW5.hs
     due: 2022/09/27
+- teacher: 张伟
+  date: 2022/09/28
+  slides:
+  - title: "第7章：⾼阶函数"
+    link: ch07 high-order function.pdf
+  - title: "第8章：类型和类簇的声明/定义"
+    link: ch08 type and type class - definition.pdf
+  assignment:
+    descriptions:
+    - text: 【6】完成第6章和第7章课程讲义上的习题
+      link: homeworks/HW6.hs
+    due: 2022/10/11
 updates: []
