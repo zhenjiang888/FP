@@ -82,4 +82,14 @@ lectures:
     - text: 【6】完成第6章和第7章课程讲义上的习题
       link: homeworks/HW6.hs
     due: 2022/10/11
+- teacher: 张伟
+  date: 2022/09/30
+  slides:
+  - title: "第8章：类型和类簇的声明/定义"
+    link: ch08 type and type class - definition.pdf
+  assignment:
+    descriptions:
+    - text: 无。【7】可以提前第8章课程讲义上的习题
+      link: homeworks/HW7.hs
+    due: 2022/10/11
 updates: []
