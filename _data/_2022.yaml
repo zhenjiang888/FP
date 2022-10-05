@@ -89,11 +89,10 @@ lectures:
     link: ch08 type and type class - definition.pdf
   assignment:
     descriptions:
-    - text: 【7】完成第8章课程讲义上的习题
-      link: homeworks/HW7.hs
+    - text: 无
     due: 2022/10/11
 - teacher: 张伟
-  date: 2022/09/30
+  date: 2022/10/05
   slides:
   - title: "第9章：An Example: The Countdown Problem"
     link: ch09 an example - the countdown problem.pdf
@@ -101,7 +100,9 @@ lectures:
     link: ch10 interactive programming.pdf
   assignment:
     descriptions:
+    - text: 【7】完成第8章课程讲义上的习题
+      link: homeworks/HW7.hs
     - text: 【8】完成第9章课程讲义上的习题
       link: homeworks/HW8.hs
-    due: TBD
+    due: 2022/10/11
 updates: []
