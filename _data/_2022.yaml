@@ -14,14 +14,14 @@ lectures:
 - teacher: 张伟
   date: 2022/09/09
   slides:
-  - title: "第2.1章：初⻅函数式思维"
+  - title: "第2.1章：初见函数式思维"
     link: ch2-1.pdf
 - teacher: 张伟
   date: 2022/09/14
   slides:
-  - title: "第2.1章：初⻅函数式思维——若干补充说明"
+  - title: "第2.1章：初见函数式思维——若干补充说明"
     link: ch02.1 functional thinking - supp.pdf
-  - title: "第2.2章：初⻅Haskell"
+  - title: "第2.2章：初见Haskell"
     link: ch02.2 meeting haskell - 未完待续.pdf
   assignment:
     descriptions:
@@ -35,7 +35,7 @@ lectures:
 - teacher: 张伟
   date: 2022/09/16
   slides:
-  - title: "第2.2章：初⻅Haskell"
+  - title: "第2.2章：初见Haskell"
     link: ch02.2 meeting haskell.pdf
   assignment:
     descriptions:
@@ -73,7 +73,7 @@ lectures:
 - teacher: 张伟
   date: 2022/09/28
   slides:
-  - title: "第7章：⾼阶函数"
+  - title: "第7章：高阶函数"
     link: ch07 high-order function.pdf
   - title: "第8章：类型和类簇的声明/定义"
     link: ch08 type and type class - definition.pdf
@@ -84,12 +84,24 @@ lectures:
     due: 2022/10/11
 - teacher: 张伟
   date: 2022/09/30
-  slides: 
+  slides:
   - title: "第8章：类型和类簇的声明/定义"
     link: ch08 type and type class - definition.pdf
   assignment:
     descriptions:
-    - text: 无。【7】可以提前第8章课程讲义上的习题
+    - text: 【7】完成第8章课程讲义上的习题
       link: homeworks/HW7.hs
     due: 2022/10/11
+- teacher: 张伟
+  date: 2022/09/30
+  slides:
+  - title: "第9章：An Example: The Countdown Problem"
+    link: ch09 an example - the countdown problem.pdf
+  - title: "第10章：交互式程序设计"
+    link: ch10 interactive programming.pdf
+  assignment:
+    descriptions:
+    - text: 【8】完成第9章课程讲义上的习题
+      link: homeworks/HW8.hs
+    due: TBD
 updates: []
