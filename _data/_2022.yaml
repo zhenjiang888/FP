@@ -110,6 +110,8 @@ lectures:
   slides:
   - title: "第10章：交互式程序设计"
     link: ch10 interactive programming.pdf
+  - title: "第12章：Monads and More"
+    link: ch12 monads and more.pdf
   assignment:
     descriptions:
     - text: 【9】完成第10章课程讲义上的习题，仅需要提交第一题的代码。您可以需要在本地修改文件名以保证与模块名一致
