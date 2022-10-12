@@ -87,10 +87,6 @@ lectures:
   slides:
   - title: "第8章：类型和类簇的声明/定义"
     link: ch08 type and type class - definition.pdf
-  assignment:
-    descriptions:
-    - text: 无
-    due: 2022/10/11
 - teacher: 张伟
   date: 2022/10/05
   slides:
@@ -117,4 +113,13 @@ lectures:
     - text: 【9】完成第10章课程讲义上的习题，仅需要提交第一题的代码。您可以需要在本地修改文件名以保证与模块名一致
       link: homeworks/HW9.hs
     due: 2022/10/11
-updates: []
+- teacher: 张伟
+  date: 2022/10/12
+  slides:
+  - title: "第12章：Monads and More"
+    link: ch12 monads and more.pdf
+
+updates:
+- slides: "第12章：Monads and More"
+  link: ch12 monads and more.pdf
+  date: 2022/10/12
