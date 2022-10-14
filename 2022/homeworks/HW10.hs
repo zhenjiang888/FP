@@ -2,6 +2,10 @@ module HW10 where
 
 import           Prelude hiding (Applicative (..), Functor (..), Monad (..))
 
+infixl 4 <$
+infixl 1 >>, >>=
+infixl 4 <*>
+
 class Functor f where
   fmap        :: (a -> b) -> f a -> f b
   (<$)        :: a -> f b -> f a
@@ -28,7 +32,6 @@ instance Applicative ((->) a) where
 
 instance Monad ((->) r) where
   (>>=) = _
-
 -- End Problem #1
 
 -- Problem #2: Functor, Applicative, Monad
@@ -47,6 +50,7 @@ instance Applicative Expr where
 
 instance Monad Expr where
   (>>=) = _
+
 
 -- Write your example here:
 
