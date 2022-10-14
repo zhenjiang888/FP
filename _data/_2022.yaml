@@ -118,6 +118,16 @@ lectures:
   slides:
   - title: "第12章：Monads and More"
     link: ch12 monads and more.pdf
+- teacher: 张伟
+  date: 2022/10/14
+  slides:
+  - title: "第12章：Monads and More"
+    link: ch12 monads and more.pdf
+  assignment:
+    descriptions:
+    - text: 【10】完成第12章课程讲义上的习题
+      link: homeworks/HW10.hs
+    due: 2022/10/18
 
 updates:
 - slides: "第12章：Monads and More"
