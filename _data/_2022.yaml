@@ -128,6 +128,11 @@ lectures:
     - text: 【10】完成第12章课程讲义上的习题
       link: homeworks/HW10.hs
     due: 2022/10/18
+- teacher: 张伟
+  date: 2022/10/19
+  slides:
+  - title: "第13章：Monadic Parser"
+    link: ch13 an example - monadic parser.pdf
 
 updates:
 - slides: "第12章：Monads and More"
