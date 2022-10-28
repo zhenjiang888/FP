@@ -145,7 +145,7 @@ lectures:
     - text: 【11】完成第13、14、15章课程讲义上的习题
       link: homeworks/HW11.hs
     due: 2022/10/27
-- teacher:
+- teacher: 胡振江
   date: 2022/10/26
   slides:
   - title: "Chapter 16: Introduction to Calculational Programming"
@@ -157,8 +157,21 @@ lectures:
     - text: 【12】完成第17章的习题17.1和17.2
       link: homeworks/HW12.agda
     due: 2022/11/01
+- teacher: 胡振江
+  date: 2022/10/26
+  slides:
+  - title: "Chapter 18: Natural Numbers in  Agda"
+    link: ch18_agda_nat.pdf
+  assignment:
+    descriptions:
+    - text: 【13】完成第17章的习题17.3
+      link: homeworks/HW13.agda
+    due: 2022/11/01
 
 updates:
 - slides: "第12章：Monads and More"
   link: ch12 monads and more.pdf
   date: 2022/10/12
+- slides: "Chapter 17: Basics of Agda"
+  link: ch17_agda_basics.pdf
+  date: 2022/11/01
