@@ -1,6 +1,5 @@
 module HW12 where
 
-open import Level using (Level)
 open import Data.Bool using (Bool; true; false; if_then_else_)
 
 import Relation.Binary.PropositionalEquality as Eq
@@ -16,7 +15,7 @@ nextday : day → day
 nextday = ?
 
 -- problem 17.3
-ite-arg : ∀ {ℓ ℓ′ : Level} {A : Set ℓ} {B : Set ℓ′}
+ite-arg : ∀ {ℓ ℓ′} {A : Set ℓ} {B : Set ℓ′}
   → (f : A → B)
   → (b : Bool)
   → (x y : A)
