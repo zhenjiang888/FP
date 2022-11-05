@@ -158,15 +158,20 @@ lectures:
       link: homeworks/HW12.agda
     due: 2022/11/08
 - teacher: 胡振江
-  date: 2022/10/26
+  date: 2022/10/28
   slides:
-  - title: "Chapter 18: Natural Numbers in  Agda"
+  - title: "Chapter 18: Natural Numbers in Agda"
     link: ch18_agda_nat.pdf
   assignment:
     descriptions:
     - text: 【13】完成第17章的习题17.3
       link: homeworks/HW13.agda
-    due: 2022/11/08
+    due: 2022/11/15
+- teacher: 李戈
+  date: 2022/11/4
+  slides:
+  - title: "计算机的基本原理"
+    link: "A01 计算机的基本原理.pdf"
 
 updates:
 - slides: "第12章：Monads and More"
