@@ -172,6 +172,16 @@ lectures:
   slides:
   - title: "计算机的基本原理"
     link: "A01 计算机的基本原理.pdf"
+- teacher: 胡振江
+  date: 2022/11/09
+  slides:
+  - title: "Chapter 19: Lists in Agda"
+    link: ch19_agda_list.pdf
+  assignment:
+    descriptions:
+    - text: 【14】完成第18章、第19章的习题
+      link: homeworks/HW14.agda
+    due: 2022/11/15
 
 updates:
 - slides: "第12章：Monads and More"
