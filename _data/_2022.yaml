@@ -154,9 +154,9 @@ lectures:
     link: ch17_agda_basics.pdf
   assignment:
     descriptions:
-    - text: 【12】完成第17章的习题17.1和17.2
+    - text: 【12】完成第17章的习题
       link: homeworks/HW12.agda
-    due: 2022/11/08
+    due: 2022/11/15
 - teacher: 胡振江
   date: 2022/10/28
   slides:
@@ -164,7 +164,7 @@ lectures:
     link: ch18_agda_nat.pdf
   assignment:
     descriptions:
-    - text: 【13】完成第17章的习题17.3
+    - text: 【13】完成第18章的习题
       link: homeworks/HW13.agda
     due: 2022/11/15
 - teacher: 李戈
@@ -179,7 +179,7 @@ lectures:
     link: ch19_agda_list.pdf
   assignment:
     descriptions:
-    - text: 【14】完成第18章、第19章的习题
+    - text: 【14】完成第19章的习题
       link: homeworks/HW14.agda
     due: 2022/11/15
 
