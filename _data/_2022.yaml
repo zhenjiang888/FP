@@ -182,6 +182,21 @@ lectures:
     - text: 【14】完成第19章的习题
       link: homeworks/HW14.agda
     due: 2022/11/15
+- teacher: 李戈
+  date: 2022/11/12
+  slides:
+  - title: "计算机硬件系统"
+    link: "计算机硬件系统.pdf"
+- teacher: 胡振江
+  date: 2022/11/16
+  slides:
+  - title: "Chapter 20: Internal Verification"
+    link: ch20_internal.pdf
+  assignment:
+    descriptions:
+    - text: 【15】完成第20章的习题
+      link: homeworks/HW15.agda
+    due: 2022/11/22
 
 updates:
 - slides: "第12章：Monads and More"
