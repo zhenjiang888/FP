@@ -142,6 +142,10 @@ diagonal-matrix n d = ?
 identity-matrix : (n : ℕ) → n by n matrix
 identity-matrix n = ?
 
--- 20.2(d): dot product
+-- 20.2(d): transpose
+transpose : {n m : ℕ} → n by m matrix → m by n matrix
+transpose = ?
+
+-- 20.2(e): dot product
 _∙_ : {n : ℕ} → (x y : Vec ℕ n) → ℕ
 x ∙ y = ?
