@@ -206,8 +206,8 @@ lectures:
     link: Ch22.pdf
   assignment:
     descriptions:
-    - text: 【15】完成第20章的习题
-      link: homeworks/HW15.agda
+    - text: 【16】完成第21章的习题
+      link: homeworks/HW16.agda
     due: 2022/11/22
 
 updates:
