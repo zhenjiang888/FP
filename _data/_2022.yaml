@@ -197,6 +197,18 @@ lectures:
     - text: 【15】完成第20章的习题
       link: homeworks/HW15.agda
     due: 2022/11/22
+- teacher: 胡振江
+  date: 2022/11/23
+  slides:
+  - title: "第21章： 等式理论"
+    link: ch21_equality.pdf
+  - title: "Chapter 22. Bird Meertens Formalism (BMF)"
+    link: Ch22.pdf
+  assignment:
+    descriptions:
+    - text: 【15】完成第20章的习题
+      link: homeworks/HW15.agda
+    due: 2022/11/22
 
 updates:
 - slides: "第12章：Monads and More"
