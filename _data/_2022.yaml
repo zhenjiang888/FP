@@ -168,7 +168,7 @@ lectures:
       link: homeworks/HW13.agda
     due: 2022/11/15
 - teacher: 李戈
-  date: 2022/11/4
+  date: 2022/11/04
   slides:
   - title: "计算机的基本原理"
     link: "A01 计算机的基本原理.pdf"
@@ -182,7 +182,7 @@ lectures:
     - text: 【14】完成第19章的习题
       link: homeworks/HW14.agda
     due: 2022/11/15
-- teacher: 李戈
+- teacher: 董豪
   date: 2022/11/12
   slides:
   - title: "计算机硬件系统"
@@ -197,18 +197,40 @@ lectures:
     - text: 【15】完成第20章的习题
       link: homeworks/HW15.agda
     due: 2022/11/22
+- teacher: 刘譞哲
+  date: 2022/11/18
+  slides:
+  - title: "认识计算机系统软件"
+    link: "基本知识-05-系统软件-2022update.pdf"
 - teacher: 胡振江
   date: 2022/11/23
   slides:
-  - title: "第21章： 等式理论"
+  - title: "第21章：等式理论"
     link: ch21_equality.pdf
-  - title: "Chapter 22. Bird Meertens Formalism (BMF)"
-    link: Ch22.pdf
   assignment:
     descriptions:
     - text: 【16】完成第21章的习题
       link: homeworks/HW16.agda
     due: 2022/11/22
+- teacher: 王厚峰
+  date: 2022/11/25
+  slides:
+  - title: "信息表示"
+    link: "计算机基础—信息表示.pdf"
+- teacher: 胡振江
+  date: 2022/11/30
+  slides:
+  - title: "Chapter 22. Bird Meertens Formalism (BMF)"
+    link: Ch22.pdf
+  assignment:
+    descriptions:
+    - text: 【17】完成课堂上要求的习题，以任何形式提交均可。
+    due: 2022/12/06
+- teacher: 胡振江
+  date: 2022/12/02
+  slides:
+  - title: "程序设计语言"
+    link: "PL.pdf"
 
 updates:
 - slides: "第12章：Monads and More"
