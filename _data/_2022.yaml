@@ -231,7 +231,18 @@ lectures:
   slides:
   - title: "程序设计语言"
     link: "PL.pdf"
-
+- teacher: 胡振江
+  date: 2022/12/07
+  slides:
+  - title: "第23章：序列理论概述 (in Agda)"
+    link: "Ch23_BMF_agda.pdf"
+  - title: "Chapter 24. Homomorphism"
+    link: "Ch24.pdf"
+  assignment:
+    descriptions:
+    - text: 【18】完成课堂上要求的习题，细节及模板待更新。
+    due: 2022/12/13
+  
 updates:
 - slides: "第12章：Monads and More"
   link: ch12 monads and more.pdf
