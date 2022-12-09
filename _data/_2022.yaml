@@ -243,7 +243,7 @@ lectures:
     - text: 【18】本次作业请将以下内容均添加至附件提交。
     - text: 完成 BMF1-3 （第22章）与 BMF2-1 （第24章）的证明。以任何形式均可，请作为附件提交，不要添加至正文。
     - text: 完成第23章的习题
-      link: homeworks/.agda
+      link: homeworks/HW18.agda
     - text: 完成 BMF1-2 （第22章）
       link: homeworks/HW18.hs
     due: 2022/12/16
