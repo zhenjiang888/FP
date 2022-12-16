@@ -247,6 +247,21 @@ lectures:
     - text: 完成 BMF1-2 （第22章）
       link: homeworks/HW18.hs
     due: 2022/12/16
+- teacher: 胡振江
+  date: 2022/12/14
+  slides:
+  - title: "Chapter 25. Fusion and Tupling"
+    link: "Ch25.pdf"
+  assignment:
+    descriptions:
+    - text: 【19】完成第24章、第25章习题，以附件形式提交。
+      link: homeworks/HW19.hs
+    due: 2022/12/23
+- teacher: 胡振江
+  date: 2022/12/16
+  slides:
+  - title: "Chapter 26. Automatic Parallelization"
+    link: "Ch26.pdf"
 
 updates:
 - slides: "第12章：Monads and More"
