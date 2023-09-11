@@ -24,14 +24,14 @@ layout: home
     2. Type and type class
     3. List comprehension
     4. Recursive function
-    5. High-order function
+    5. Higher-order function
     6. Declaring types and classes
     7. Interactive programming
     8. Monads
     9. Lazy evaluation
 
 3. 函数式程序推理与演算
-    1.  Agda定理证明器入门
+    1. Agda定理证明器入门
     2. 程序演算概要
     3. Theory of Lists
     4. Theory of Generic Data Types
