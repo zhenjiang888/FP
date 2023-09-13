@@ -35,17 +35,25 @@ layout: page
         {% if desc.text %}
         {{ desc.text }}
         {% if desc.link %}
-          {% if desc.linktitle %}
-            <a href="{{ desc.link }}">{{ desc.linktitle }}</a>
-          {% else %}
-            ：<a href="{{ desc.link }}">{{ desc.link }}</a>
-          {% endif %}
+        {% if desc.linktitle %}
+        <a href="{{ desc.link }}">{{ desc.linktitle }}</a>
+        {% else %}
+        ：<a href="{{ desc.link }}">{{ desc.link }}</a>
+        {% endif %}
         {% endif %}
         {% else %}
         {{ desc }}
         {% endif %}
       </li>
       {% endfor %}
+
+      {% if lecture.assignment.appendix %}
+      {% for desc in lecture.assignment.appendix %}
+      <li>
+        附加材料：<a href="{{ desc.link }}">{{ desc.text }}</a>
+      </li>
+      {% endfor %}
+      {% endif %}
     </ul>
   </li>
   {% endif %}
