@@ -2,5 +2,21 @@ teaching_assistants:
 - 关智超
 - 曹奕远
 
-lectures: []
+lectures: 
+- teacher: 胡振江
+  date: 2022/09/13
+  slides:
+  - title: "导言：函数式程序设计"
+    link: intro.pdf
+  - title: "第一章：概论"
+    link: ch1.pdf
+  assignment:
+    descriptions:
+    - text: 【1】完成课程讲义上的习题（以任意方式提交）
+      due: 2023/09/19
+    appendix:
+    - text: 如何安装 Haskell 环境？
+      link: https://higher-order.fun/cn/2023/08/27/InstallHaskell.html
+
+
 updates: []
