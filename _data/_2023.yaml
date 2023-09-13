@@ -4,7 +4,7 @@ teaching_assistants:
 
 lectures: 
 - teacher: 胡振江
-  date: 2022/09/13
+  date: 2023/09/13
   slides:
   - title: "导言：函数式程序设计"
     link: intro.pdf
