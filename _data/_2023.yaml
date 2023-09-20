@@ -44,7 +44,7 @@ lectures:
       link: homeworks/HW3.hs
     - text: 本次作业需要安装random包，换源方法请查看
       linktitle: 此页面
-      link: /2023/homeworks/HW3_README
+      link: /FP/2023/homeworks/HW3_README
     - text: 你可能需要 `randomRIO` 这个函数，用法为 `n <- randomRIO (1, 100)`
     - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2300012345-张三-3”
     due: 2023/09/26
