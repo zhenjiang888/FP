@@ -57,8 +57,22 @@ lectures:
     link: ch04 function definition.pdf
   assignment:
     descriptions:
-    - text: 【4】完成第3章、第四章课程讲义上的习题
+    - text: 【4】完成第3章、第4章课程讲义上的习题
       link: homeworks/HW4.hs
     due: 2023/09/26
+- teacher: 张伟
+  date: 2023/09/27
+  slides:
+  - title: "第5章：List Comprehension"
+    link: ch05 list comprehension.pdf
+  - title: "第6章：递归函数"
+    link: ch06 recursive function.pdf
+  - title: "第7章：高阶函数"
+    link: ch07 higher-order function.pdf
+  assignment:
+    descriptions:
+    - text: 【5】完成第5章和第6章课程讲义上的习题
+      link: homeworks/HW5.hs
+    due: 2023/10/10
 
 updates: []
