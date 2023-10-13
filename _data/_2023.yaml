@@ -93,8 +93,10 @@ lectures:
     link: ch10 interactive programming.pdf
   assignment:
     description:
-    - text: 【7】完成第8、9章课程讲义上的习题
+    - text: 【7】完成第8章课程讲义上的习题
       link: homeworks/HW7.hs
+    - text: 【8】完成第9章课程讲义上的习题
+      link: homeworks/HW8.hs
     due: 2023/10/17
 
 updates: []
