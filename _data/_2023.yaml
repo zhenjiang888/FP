@@ -75,7 +75,7 @@ lectures:
       link: homeworks/HW5.hs
     due: 2023/10/10
 - teacher: 张伟
-  date: 2022/10/11
+  date: 2023/10/11
   slides:
   - title: "第8章：类型和类簇的声明/定义"
     link: ch08 type and type class - definition.pdf
@@ -83,6 +83,18 @@ lectures:
     descriptions:
     - text: 【6】完成第7章课程讲义上的习题
       link: homeworks/HW6.hs
-    due: 2022/10/17
+    due: 2023/10/17
+- teacher: 张伟
+  date: 2023/10/13
+  slides:
+  - title: "第9章：An Example: The Countdown Problem"
+    link: ch09 an example - the countdown problem.pdf
+  - title: "第10章：交互式程序设计"
+    link: ch10 interactive programming.pdf
+  assignment:
+    description:
+    - text: 【7】完成第8、9章课程讲义上的习题
+      link: homeworks/HW7.hs
+    due: 2023/10/17
 
 updates: []
