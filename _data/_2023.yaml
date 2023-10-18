@@ -92,7 +92,7 @@ lectures:
   - title: "第10章：交互式程序设计"
     link: ch10 interactive programming.pdf
   assignment:
-    description:
+    descriptions:
     - text: 【7】完成第8章课程讲义上的习题
       link: homeworks/HW7.hs
     - text: 【8】完成第9章课程讲义上的习题
