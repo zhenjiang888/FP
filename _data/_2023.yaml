@@ -98,5 +98,17 @@ lectures:
     - text: 【8】完成第9章课程讲义上的习题
       link: homeworks/HW8.hs
     due: 2023/10/17
+- teacher: 张伟
+  date: 2023/10/18
+  slides:
+  - title: "第12章：Monads and More"
+    link: ch12 monads and more.pdf
+  - title: "范畴论、Functor、Monad"
+    link: ch12 monads and more - CT Version.pdf
+  assignment:
+    descriptions:
+    - text: 【9】完成第10章课程讲义上的习题，仅需要提交第一题的代码。
+      link: homeworks/HW9.hs
+    due: 2023/10/25
 
 updates: []
