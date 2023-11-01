@@ -118,5 +118,15 @@ lectures:
     - text: 【10】完成第12章课程讲义上的习题。
       link: homeworks/HW10.hs
     due: 2023/10/31
+- teacher: 张伟
+  date: 2023/11/1
+  slides:
+  - title: "第13章：Monadic Parser"
+    link: ch13 an example - monadic parser.pdf
+  assignment:
+    descriptions:
+    - text: 【11】完成第13章课程讲义上的习题。
+      link: homeworks/HW11.hs
+    due: 2023/11/7
 
 updates: []
