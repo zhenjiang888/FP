@@ -1,17 +1,55 @@
 module HW12 where
 
--- Problem #1: Write a Haskell program to solve the maximum segment
---   sum problem, following the three steps in the slides.
+import Prelude hiding (Maybe (..))
 
-mss :: [Integer] -> Integer
-mss = _
+-- Problem #1: Maybe, Foldable and Traversable
+data Maybe a = Nothing | Just a
+  deriving (Show, Eq, Ord)
+
+instance Functor Maybe where
+  fmap = _
+
+instance Foldable Maybe where
+  foldMap = _
+  foldl = _
+  foldr = _
+
+foldMaybe :: (Monoid a) => Maybe a -> a
+foldMaybe = _
+
+instance Traversable Maybe where
+  traverse = _
 
 -- End Problem #1
 
--- Problem #2: Write a Haskell program to solve the maximum segment
---   sum problem, using the smart algorithm in the slides.
+-- Problem #2: Tree, Foldable and Traversable
+data Tree a = Leaf | Node (Tree a) a (Tree a)
+  deriving (Show)
 
-mss' :: [Integer] -> Integer
-mss' = _
+instance Functor Tree where
+  fmap = _
+
+instance Foldable Tree where
+  foldMap = _
+  foldl = _
+  foldr = _
+
+foldTree :: (Monoid a) => Tree a -> a
+foldTree = _
+
+instance Traversable Tree where
+  traverse = _
 
 -- End Problem #2
+
+-- Problem #3: fibonacci using zip/tail/list-comprehension
+fibs :: [Integer]
+fibs = _
+
+-- End Problem #3
+
+-- Problem #4: Newton's square root
+sqroot :: Double -> Double
+sqroot = _
+
+-- End Problem #4
