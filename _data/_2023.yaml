@@ -128,5 +128,17 @@ lectures:
     - text: 【11】完成第13章课程讲义上的习题。
       link: homeworks/HW11.hs
     due: 2023/11/7
+- teacher: 胡振江
+  date: 2022/10/26
+  slides:
+  - title: "Chapter 16: Introduction to Calculational Programming"
+    link: ch16_intro.pdf
+  - title: "Chapter 17: Basics of Agda"
+    link: ch17_agda_basics.pdf
+  assignment:
+    descriptions:
+    - text: 【12】完成第16章的习题
+      link: homeworks/HW12.hs
+    due: 2022/11/21
 
 updates: []
