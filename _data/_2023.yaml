@@ -150,7 +150,7 @@ lectures:
   assignment:
     descriptions:
     - text: 【13】完成第16章课程讲义上的习题。
-      link: homeworks/HW12.hs
+      link: homeworks/HW13.hs
     due: 2023/11/21
 
 updates: []
