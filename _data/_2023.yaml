@@ -160,7 +160,7 @@ lectures:
   assignment:
     descriptions:
     - text: 【14】完成第17章课程讲义上的习题。
-      link: homeworks/HW14.hs
+      link: homeworks/HW14.agda
     appendix:
     - text: 如何安装 Agda 环境？
       link: https://higher-order.fun/cn/2023/11/15/InstallAgda.html
