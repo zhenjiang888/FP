@@ -180,7 +180,7 @@ lectures:
   assignment:
     descriptions:
     - text: 【15】完成第18、19章课程讲义上的习题。
-      link: homeworks/HW13.hs
+      link: homeworks/HW15.agda
     due: 2023/11/28
 
 updates: []
