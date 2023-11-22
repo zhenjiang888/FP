@@ -165,5 +165,22 @@ lectures:
     - text: 如何安装 Agda 环境？
       link: https://higher-order.fun/cn/2023/11/15/InstallAgda.html
     due: 2023/11/28
+- teacher: 李戈
+  date: 2023/11/19
+  slides:
+  - title: "计算机的基本原理"
+    link: "A01  计算机的基本原理.pdf"
+- teacher: 胡振江
+  date: 2023/11/22
+  slides:
+  - title: "Chapter 19: Lists in Agda"
+    link: ch19_agda_list.pdf
+  - title: "Chapter 20: Internal Verification"
+    link: ch20_internal.pdf
+  assignment:
+    descriptions:
+    - text: 【15】完成第18、19章课程讲义上的习题。
+      link: homeworks/HW13.hs
+    due: 2023/11/28
 
 updates: []
