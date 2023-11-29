@@ -175,12 +175,20 @@ lectures:
   slides:
   - title: "Chapter 19: Lists in Agda"
     link: ch19_agda_list.pdf
-  - title: "Chapter 20: Internal Verification"
-    link: ch20_internal.pdf
   assignment:
     descriptions:
     - text: 【15】完成第18、19章课程讲义上的习题。
       link: homeworks/HW15.agda
     due: 2023/11/28
+- teacher: 胡振江
+  date: 2023/11/29
+  slides:
+  - title: "Chapter 20: Internal Verification"
+    link: ch20_internal.pdf
+  assignment:
+    descriptions:
+    - text: 【16】完成第20章课程讲义上的习题。
+      link: homeworks/HW16.agda
+    due: 2023/12/5
 
 updates: []
