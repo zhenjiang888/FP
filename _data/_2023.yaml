@@ -199,10 +199,8 @@ lectures:
     link: Ch22.pdf
   assignment:
     descriptions:
-    - text: 本次作业分为两个部分，请全部完成后统一提交。
-    - text: 【17】完成第21章课程讲义上的习题，提供作业模板。
+    - text: 【17】完成第21章课程讲义上的习题。
       link: homeworks/HW17.agda
-    - text: 完成第22章课程讲义上的习题，作为附件以任何形式提交均可。
     due: 2023/12/12
 
 updates: []
