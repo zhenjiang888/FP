@@ -202,5 +202,14 @@ lectures:
     - text: 【17】完成第21章课程讲义上的习题。
       link: homeworks/HW17.agda
     due: 2023/12/12
+- teacher: 胡振江
+  date: 2023/12/13
+  slides:
+  - title: "第23章：序列理论概述 (in Agda)"
+    link: Ch23_BMF_agda.pdf
+  assignment:
+    descriptions:
+    - text: 【18】完成第22章课程讲义上的作业习题，以任何形式提交均可。
+    due: 2023/12/19
 
 updates: []
