@@ -211,5 +211,15 @@ lectures:
     descriptions:
     - text: 【18】完成第22章课程讲义上的作业习题，以任何形式提交均可。
     due: 2023/12/19
+- teacher: 胡振江
+  date: 2023/12/20
+  slides:
+  - title: "Chapter 24. Homomorphism"
+    link: Ch24.pdf
+  assignment:
+    descriptions:
+    - text: 【19】完成第23章课程讲义上的作业习题，本周作业会给更长的时间完成。
+      link: homeworks/HW19.agda
+    due: 2024/1/2
 
 updates: []
