@@ -221,5 +221,15 @@ lectures:
     - text: 【19】完成第23章课程讲义上的作业习题，本周作业会给更长的时间完成。
       link: homeworks/HW19.agda
     due: 2024/1/2
+- teacher: 胡振江
+  date: 2023/12/20
+  slides:
+  - title: "Chapter 25. Fusion and Tupling"
+    link: Ch25.pdf
+  assignment:
+    descriptions:
+    - text: 【20】完成第24章和第25章课程讲义上的作业习题，祝大家新年快乐！
+      link: homeworks/HW20.hs
+    due: 2024/1/2
 
 updates: []
