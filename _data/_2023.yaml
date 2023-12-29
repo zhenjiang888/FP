@@ -231,5 +231,12 @@ lectures:
     - text: 【20】完成第24章和第25章课程讲义上的作业习题，祝大家新年快乐！
       link: homeworks/HW20.hs
     due: 2024/1/2
+- teacher: 胡振江
+  date: 2023/12/29
+  slides:
+  - title: "Chapter 26: Unfold"
+    link: Ch26.pdf
+  - title: "Chapter 27. Automatic Parallelization"
+    link: Ch27.pdf
 
 updates: []
