@@ -228,7 +228,7 @@ lectures:
     link: Ch25.pdf
   assignment:
     descriptions:
-    - text: 【20】完成第24章和第25章课程讲义上的作业习题，祝大家新年快乐！
+    - text: 【20】完成第24章和第25章课程讲义上的作业习题。
       link: homeworks/HW20.hs
     due: 2024/1/2
 - teacher: 胡振江
@@ -238,5 +238,10 @@ lectures:
     link: Ch26.pdf
   - title: "Chapter 27. Automatic Parallelization"
     link: Ch27.pdf
+  assignment:
+    descriptions:
+    - text: 【21】完成第26章课程讲义上的作业习题，祝大家新年快乐！
+      link: homeworks/HW21.hs
+    due: 2024/1/2
 
 updates: []
