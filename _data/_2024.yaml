@@ -13,7 +13,7 @@ lectures:
   assignment:
     descriptions:
     - text: 【1】完成课程讲义上的习题（以任意方式提交）
-      due: 2024/09/18 11:59AM
+    due: 2024/09/18 11:59AM
     appendix:
     - text: 如何安装 Haskell 环境？
       link: https://higher-order.fun/cn/2023/08/27/InstallHaskell.html
