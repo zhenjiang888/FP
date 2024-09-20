@@ -1,4 +1,4 @@
-module HW3 where
+module Main where
 
 import System.Random
 
