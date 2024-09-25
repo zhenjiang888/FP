@@ -56,5 +56,17 @@ lectures:
     - text: 你可能需要 `randomRIO` 这个函数，用法为 `n <- randomRIO (1, 100)`
     - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-3”
     due: 2024/09/25 11:59AM
-
+- teacher: 张伟
+  date: 2024/09/25
+  slides:
+  - title: "第4章：类型与类簇"
+    link: 第04章 类型与类簇.pdf
+  assignment:
+    descriptions:
+    - text: 【5】完成第4章课程讲义上的习题
+      linktitle: HW4.hs
+      link: homeworks/HW4.hs
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-4”
+    due: 2024/10/02 11:59AM
 updates: []
+
