@@ -63,10 +63,27 @@ lectures:
     link: 第04章 类型与类簇.pdf
   assignment:
     descriptions:
-    - text: 【5】完成第4章课程讲义上的习题
+    - text: 【5】完成第4章课程讲义上的习题1-2
       linktitle: HW4.hs
       link: homeworks/HW4.hs
     - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-4”
     due: 2024/10/02 11:59AM
+- teacher: 张伟
+  date: 2023/09/27
+  slides:
+  - title: "第5章：函数的定义"
+    link: 第05章 函数的定义.pdf
+  - title: "第6章：List Comprehension"
+    link: 第06章 List Comprehension.pdf
+  assignment:
+    descriptions:
+    - text: 【6】完成第5章和第6章课程讲义上的习题
+      linktitle: HW5.hs
+      link: homeworks/HW5.hs
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-5”
+    due: 2024/10/02 11:59AM
+
+
+
 updates: []
 
