@@ -60,4 +60,6 @@ decode = map (chr . bin2int) . chop
 
 chop :: [Bit] -> [[Bit]]
 chop = _ -- hint: not 'chop8' any more
+-- you can check: decode [1,0,0,0,0,1,1,0,1] == "a"
+
 -- End Problem #3

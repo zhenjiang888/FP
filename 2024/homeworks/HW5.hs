@@ -52,6 +52,7 @@ crack xs  =  encode (-factor) xs
         factor = position (minimum chitab) chitab      
         chitab = [ chisqr (rotate n table') table | n <- [0..25] ]
         table' = freqs xs
+-- you can check : crack "aaaaab" = "eeeeef"
 
 freqs :: String -> [Float]
 freqs = _
