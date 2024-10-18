@@ -123,6 +123,8 @@ lectures:
   slides:
   - title: "第10章：An Example: The Countdown Problem"
     link: 第10章 An Example - The Countdown Problem.pdf
+  - title: "第11章：交互式程序设计"
+    link: 第11章 Interactive Programming.pdf
   assignment:
     descriptions:
     - text: 【10】完成第10章课程讲义上的习题
