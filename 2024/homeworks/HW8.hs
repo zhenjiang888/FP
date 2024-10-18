@@ -61,7 +61,7 @@ split (x:xs) = ([x], xs) : [(x:ls, rs) | (ls, rs) <- split xs]
 -- 你可能还需要自定义一些辅助函数或类型
 -- 注意你需要实现3个功能：
 -- 1. 添加Pow相关功能
--- 2. 输出最精确的solution set，如果没有最精确的solution set
+-- 2. 输出相对最精确的solution set，如果没有结果完全相同solution set
 -- 3. 为solutions制定你喜欢的排序方式
 -- 示例如下：
 -- solutions [1, 3, 7] 23 应当返回两类解：值为22，24的表达式
