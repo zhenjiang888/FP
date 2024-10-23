@@ -132,6 +132,20 @@ lectures:
       link: homeworks/HW8.hs
     - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-8”
     due: 2024/10/23 11:59AM
-
+- teacher: 张伟
+  date: 2024/10/23
+  slides:
+  - title: "第11章：交互式程序设计"
+    link: 第11章 Interactive Programming.pdf
+  - title: "第12章：Monads and More"
+    link: 第12章 monads and more.pdf
+  - title: "第12章：Monads and More(带动画版PPT)"
+    link: 第12章 monads and more - 带动画.pdf
+  assignment:
+    descriptions:
+    - text: 【11】完成第11章课程讲义上的习题，仅需要提交第一题的代码。
+      link: homeworks/HW9.hs
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-9”
+    due: 2024/10/30 11:59AM
 updates: []
 
