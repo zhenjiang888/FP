@@ -174,5 +174,17 @@ lectures:
   assignment:
     descriptions:
     - text: 【14】本次课程无课后作业。
+- teacher: 张伟
+  date: 2024/11/6
+  slides:
+  - title: "第14章：Foldables and Friends"
+    link: 第14章 foldables and friends.pdf
+  - title: "第15章：计算模型—Lazy Evaluation"
+    link: 第15章 lazy evaluation.pdf
+  assignment:
+    descriptions:
+    - text: 【15】完成第13、15章课程讲义上的习题。
+      link: homeworks/HW11.hs
+    due: 2024/11/20 11:59AM
 updates: []
 
