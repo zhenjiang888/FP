@@ -197,6 +197,22 @@ lectures:
     descriptions:
     - text: 【16】完成第16章课程讲义上的习题。
       link: homeworks/HW12.hs
+    appendix:
+    - text: 如何安装 Agda 环境？
+      link: https://higher-order.fun/cn/2023/11/15/InstallAgda.html
     due: 2024/11/27 11:59AM
+- teacher: 胡振江
+  date: 2024/11/27
+  slides:
+  - title: "Chapter 17: Basics of Agda"
+    link: ch17_agda_basics.pdf
+  - title: "Chapter 18: Natural Numbers in Agda"
+    link: ch18_agda_nat.pdf
+  assignment:
+    descriptions:
+    - text: 【17】完成第17章课程讲义上的习题。
+      link: homeworks/HW13.agda
+    due: 2024/12/04 11:59AM
+
 updates: []
 
