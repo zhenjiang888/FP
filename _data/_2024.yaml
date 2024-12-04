@@ -213,6 +213,18 @@ lectures:
     - text: 【17】完成第17章课程讲义上的习题。
       link: homeworks/HW13.agda
     due: 2024/12/04 11:59AM
+- teacher: 胡振江
+  date: 2024/12/4
+  slides:
+  - title: "Chapter 18: Natural Numbers in Agda"
+    link: ch18_agda_nat.pdf
+  - title: "Chapter 19: Lists in Agda"
+    link: ch19_agda_list.pdf
+  assignment:
+    descriptions:
+    - text: 【18】完成第18章课程讲义上的习题。
+      link: homeworks/HW14.agda
+    due: 2024/12/11 11:59AM
 
 updates: []
 
