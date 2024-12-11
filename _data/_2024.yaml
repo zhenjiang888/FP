@@ -225,6 +225,18 @@ lectures:
     - text: 【18】完成第18章课程讲义上的习题。
       link: homeworks/HW14.agda
     due: 2024/12/11 11:59AM
+- teacher: 胡振江
+  date: 2024/12/11
+  slides:
+  - title: "Chapter 19: Lists in Agda"
+    link: ch19_agda_list.pdf
+  - title: "Chapter 20: Internal Verification"
+    link: ch20_internal.pdf
+  assignment:
+    descriptions:
+    - text: 【19】完成第19，20章课程讲义上的习题。
+      link: homeworks/HW15.agda
+    due: 2024/12/18 11:59AM
 
 updates: []
 
