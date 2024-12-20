@@ -249,5 +249,16 @@ lectures:
     - text: 【20】完成第21章课程讲义上的习题。
       link: homeworks/HW16.agda
     due: 2024/12/25 11:59AM
+- teacher: 胡振江
+  date: 2024/12/20
+  slides:
+  - title: "第23章：序列理论概述 (in Agda)"
+    link: Ch23_BMF_agda.pdf
+  assignment:
+    descriptions:
+    - text: 【21】完成第22章的BMF-1, BMF-2, BMF-3，以任何形式提交均可，同时完成第23章课程讲义上的习题。
+      link: homeworks/HW17.agda
+    - text: 本次作业提交时间将会延长一周。
+    due: 2025/01/01 11:59AM
 updates: []
 
