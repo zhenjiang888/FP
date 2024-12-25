@@ -331,9 +331,13 @@ module BMF2-1 where
 
   -- bonus: find a proper way to prove your split is indeed correct:
   --
-  --   split-is-indeed-correct : ∀ {A} xs
-  --     → let (ys , z) = split {A} xs
-  --       in xs ≡ ys ++ [ z ]
+  -- NList2List : ∀ {A : Set} → NList A → List A
+  -- NList2List [ x ]′ = [ x ]
+  -- NList2List (x ∷′ xs) = x ∷ NList2List xs
+
+  -- split-is-indeed-correct : ∀ {A} xs
+  --   → let (ys , z) = split {A} xs
+  --     in NList2List xs ≡ ys ++ [ z ]
 
   -- 2. prove 'init' is not a homomorphism
   init : ∀ {A : Set} → NList A → List A
