@@ -260,5 +260,16 @@ lectures:
       link: homeworks/HW17.agda
     - text: 本次作业提交时间将会延长一周。
     due: 2025/01/01 11:59AM
+- teacher: 胡振江
+  date: 2024/12/25
+  slides:
+  - title: "Chapter 24. Homomorphism"
+    link: Ch24.pdf
+  assignment:
+    descriptions:
+    - text: 【22】完成第24章课程讲义上的习题。
+      link: homeworks/HW18.hs
+    - text: BMF2-1为 Agda 题目，包含在HW17.agda中，BMF2-2为 Haskell 题目，包含在HW18.hs中。提交作业时两个文件烦请分别用两份邮件发送。
+    due: 2025/01/01 11:59AM
 updates: []
 
