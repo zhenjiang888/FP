@@ -276,11 +276,11 @@ lectures:
   slides:
   - title: "Chapter 25. Fusion and Tupling"
     link: Ch25.pdf
-  - title: "Chapter 26: Unfold"
+  - title: "Chapter 26. Automatic Parallelization"
     link: Ch26.pdf
   assignment:
     descriptions:
-    - text: 【23】完成第25，26章课程讲义上的习题。
+    - text: 【23】完成第25章课程讲义上的习题BMF3-2(2)。
       link: homeworks/HW19.hs
     due: 2025/01/08 11:59AM
 updates: []
