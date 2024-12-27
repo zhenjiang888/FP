@@ -271,5 +271,17 @@ lectures:
       link: homeworks/HW18.hs
     - text: BMF2-1为 Agda 题目，包含在HW17.agda中，BMF2-2为 Haskell 题目，包含在HW18.hs中。提交作业时两个文件烦请分别用两份邮件发送。
     due: 2025/01/01 11:59AM
+- teacher: 胡振江
+  date: 2024/12/27
+  slides:
+  - title: "Chapter 25. Fusion and Tupling"
+    link: Ch25.pdf
+  - title: "Chapter 26: Unfold"
+    link: Ch26.pdf
+  assignment:
+    descriptions:
+    - text: 【23】完成第25，26章课程讲义上的习题。
+      link: homeworks/HW19.hs
+    due: 2025/01/08 11:59AM
 updates: []
 
