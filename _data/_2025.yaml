@@ -2,6 +2,20 @@ teaching_assistants:
 - 黄柘铳
 - 余泰来
 
-lectures: []
+lectures: 
+- teacher: 胡振江
+  date: 2025/09/10
+  slides:
+  - title: "导言：函数式程序设计"
+    link: intro.pdf
+  - title: "第1章：概论"
+    link: ch1.pdf
+  assignment:
+    descriptions:
+    - text: 【1】完成课程讲义上的习题（以任意方式提交）
+    due: 2024/09/17 11:59AM
+    appendix:
+    - text: 如何安装 Haskell 环境？
+      link: https://higher-order.fun/cn/2023/08/27/InstallHaskell.html
 
 updates: []
