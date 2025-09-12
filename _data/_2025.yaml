@@ -17,5 +17,12 @@ lectures:
     appendix:
     - text: 如何安装 Haskell 环境？
       link: https://higher-order.fun/cn/2023/08/27/InstallHaskell.html
-
+- teacher: 张伟
+  date: 2024/09/12
+  slides:
+  - title: "第2章：初见函数式思维"
+    link: to_chapter02/index.html
+  assignment:
+    descriptions:
+    - text: 【2】本次课程无课后作业
 updates: []
