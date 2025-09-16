@@ -21,7 +21,7 @@ lectures:
   date: 2024/09/12
   slides:
   - title: "第2章：初见函数式思维"
-    link: to_chapter02/index.html
+    link: haskell/index.html
   assignment:
     descriptions:
     - text: 【2】本次课程无课后作业

@@ -4,39 +4,39 @@
 /* 苹方-简 极细体 */
 @font-face {
     font-family: "PingFangSC-Ultralight";
-    src: url('../fonts/PingFangSC-Ultralight.woff2')
+    src: url('{{ resource "fonts/PingFangSC-Ultralight.woff2" }}')
         format("woff2");
 }
 /* 苹方-简 纤细体 */
 @font-face {
     font-family: "PingFangSC-Thin";
-    src: url('../fonts/PingFangSC-Thin.woff2') format("woff2");
+    src: url('{{ resource "fonts/PingFangSC-Thin.woff2" }}') format("woff2");
 }
 /* 苹方-简 细体 */
 @font-face {
     font-family: "PingFangSC-Light";
-    src: url('../fonts/PingFangSC-Light.woff2') format("woff2");
+    src: url('{{ resource "fonts/PingFangSC-Light.woff2" }}') format("woff2");
 }
 /* 苹方-简 常规体 */
 @font-face {
     font-family: "PingFangSC-Regular";
-    src: url('../fonts/PingFangSC-Regular.woff2') format("woff2");
+    src: url('{{ resource "fonts/PingFangSC-Regular.woff2" }}') format("woff2");
 }
 /* 苹方-简 中黑体 */
 @font-face {
     font-family: "PingFangSC-Medium";
-    src: url('../fonts/PingFangSC-Medium.woff2') format("woff2");
+    src: url('{{ resource "fonts/PingFangSC-Medium.woff2" }}') format("woff2");
 }
 /* 苹方-简 中粗体 */
 @font-face {
     font-family: "PingFangSC-Semibold";
-    src: url('../fonts/PingFangSC-Semibold.woff2') format("woff2");
+    src: url('{{ resource "fonts/PingFangSC-Semibold.woff2" }}') format("woff2");
 }
 
 @font-face {
     font-family: "JetBrains Mono";
     font-style: normal;
-    src: url('../fonts/JetBrainsMono-Regular.woff2')
+    src: url('{{ resource "fonts/JetBrainsMono-Regular.woff2" }}')
         format("woff2");
 }
 
@@ -48,7 +48,7 @@
     src:
         local("Open Sans Light"),
         local("OpenSans-Light"),
-        url('../fonts/open-sans-v17-all-charsets-300.woff2')
+        url('{{ resource "fonts/open-sans-v17-all-charsets-300.woff2" }}')
             format("woff2");
 }
 
@@ -60,7 +60,7 @@
     src:
         local("Open Sans Light Italic"),
         local("OpenSans-LightItalic"),
-        url('../fonts/open-sans-v17-all-charsets-300italic.woff2')
+        url('{{ resource "fonts/open-sans-v17-all-charsets-300italic.woff2" }}')
             format("woff2");
 }
 
@@ -72,7 +72,7 @@
     src:
         local("Open Sans Regular"),
         local("OpenSans-Regular"),
-        url('../fonts/open-sans-v17-all-charsets-regular.woff2')
+        url('{{ resource "fonts/open-sans-v17-all-charsets-regular.woff2" }}')
             format("woff2");
 }
 
@@ -84,7 +84,7 @@
     src:
         local("Open Sans Italic"),
         local("OpenSans-Italic"),
-        url('../fonts/open-sans-v17-all-charsets-italic.woff2')
+        url('{{ resource "fonts/open-sans-v17-all-charsets-italic.woff2" }}')
             format("woff2");
 }
 
@@ -96,7 +96,7 @@
     src:
         local("Open Sans SemiBold"),
         local("OpenSans-SemiBold"),
-        url('../fonts/open-sans-v17-all-charsets-600.woff2')
+        url('{{ resource "fonts/open-sans-v17-all-charsets-600.woff2" }}')
             format("woff2");
 }
 
@@ -108,7 +108,7 @@
     src:
         local("Open Sans SemiBold Italic"),
         local("OpenSans-SemiBoldItalic"),
-        url('../fonts/open-sans-v17-all-charsets-600italic.woff2')
+        url('{{ resource "fonts/open-sans-v17-all-charsets-600italic.woff2" }}')
             format("woff2");
 }
 
@@ -120,7 +120,7 @@
     src:
         local("Open Sans Bold"),
         local("OpenSans-Bold"),
-        url('../fonts/open-sans-v17-all-charsets-700.woff2')
+        url('{{ resource "fonts/open-sans-v17-all-charsets-700.woff2" }}')
             format("woff2");
 }
 
@@ -132,7 +132,7 @@
     src:
         local("Open Sans Bold Italic"),
         local("OpenSans-BoldItalic"),
-        url('../fonts/open-sans-v17-all-charsets-700italic.woff2')
+        url('{{ resource "fonts/open-sans-v17-all-charsets-700italic.woff2" }}')
             format("woff2");
 }
 
@@ -144,7 +144,7 @@
     src:
         local("Open Sans ExtraBold"),
         local("OpenSans-ExtraBold"),
-        url('../fonts/open-sans-v17-all-charsets-800.woff2')
+        url('{{ resource "fonts/open-sans-v17-all-charsets-800.woff2" }}')
             format("woff2");
 }
 
@@ -156,7 +156,7 @@
     src:
         local("Open Sans ExtraBold Italic"),
         local("OpenSans-ExtraBoldItalic"),
-        url('../fonts/open-sans-v17-all-charsets-800italic.woff2')
+        url('{{ resource "fonts/open-sans-v17-all-charsets-800italic.woff2" }}')
             format("woff2");
 }
 
@@ -165,6 +165,6 @@
     font-family: "Source Code Pro";
     font-style: normal;
     font-weight: 500;
-    src: url('../fonts/source-code-pro-v11-all-charsets-500.woff2')
+    src: url('{{ resource "fonts/source-code-pro-v11-all-charsets-500.woff2" }}')
         format("woff2");
 }
