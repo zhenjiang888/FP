@@ -31,3 +31,5 @@ defaults:
       type: "assignments"
     values:
       layout: "assignment"
+
+baseurl: "/FP"
