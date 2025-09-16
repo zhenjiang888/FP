@@ -5,3 +5,6 @@ vendor
 Gemfile
 Gemfile.lock
 .vscode/
+.DS_Store
+
+/*/slides/haskell/
