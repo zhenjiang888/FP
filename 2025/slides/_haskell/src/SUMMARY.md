@@ -2,3 +2,4 @@
 
 - [课程简介](./01_intro.md)
 - [初见函数式思维](./02_functional_thinking.md)
+- [初见 Haskell](./03_meet_haskell.md)
