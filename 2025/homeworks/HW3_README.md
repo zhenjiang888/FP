@@ -37,6 +37,8 @@ Stack 为解决 Cabal 旧版本的问题而出现。Stack 在其 Stackage 平台
 
 ## 使用 Cabal {#cabal}
 
+> Cabal 创建项目似乎要求已安装 Git 已安装。[Git](https://git-scm.com/downloads) 是一个常用的版本管理工具，可以考虑自行安装。也可以考虑先使用 Stack。
+
 ### Cabal 换源 {#cabal-source}
 
 请确保你已经安装了 Cabal。在命令行运行 `cabal --version`，应当得到类似如下的结果：
@@ -97,7 +99,7 @@ Your choice? [default: Executable]
     -- Other library packages from which modules are imported.
     build-depends:    base ^>=4.21.0.0
 ```
-这个设置项决定了我们的程序会依赖哪些包，默认依赖标准库 `base`。我们将这部分改为：
+这个设置项决定了我们的程序会依赖哪些包，默认依赖标准库 `base`。GHC 的版本与 `base` 的版本相关，你的 `guess.cabal` 中对 `base` 的版本要求可能不完全一样，使用自动给出的版本即可。我们将这部分改为：
 ```yaml
     -- Other library packages from which modules are imported.
     build-depends:
@@ -149,6 +151,12 @@ url-source:
   - 打开方式为在资源管理器的地址栏输入 `%APPDATA%\stack` 回车后打开其中的 `config.yaml` 文件
   - 或者，`%APPDATA%` 通常指代 `C:\Users\<你的用户名>\AppData\Roaming`
 
+> 如果该文件不存在，可以考虑尝试运行 Stack 来初始化这个文件，例如：
+> ```
+> $ stack path --global-config
+> C:\Users\<你的用户名>\AppData\Roaming\stack\config.yaml
+> ```
+
 在末尾加入以下内容：
 ```yaml
 setup-info-locations:
@@ -182,7 +190,7 @@ package-index:
 
 Stack 会维护各包和 GHC 之间的版本兼容性，因此它自带了 GHC 版本管理的功能。GHCup 出现后，后者方便了 Haskell 各组件安装，我们可以让 Stack 改用我们已安装的 GHCup 来管理 GHC 的版本，而避免在自己的系统上出现两套互不干涉的 GHC。
 
-在如下位置创建一个新文件：
+在如下位置创建一个新文件（可能需要自己创建其中的 `hooks` 文件夹）：
 - macOS 下的 `~/.stack/hooks/ghc-install.sh`
 - Windows 下的 `%APPDATA%\stack\hooks\ghc-install.sh`
 
@@ -258,7 +266,7 @@ Downloading template new-template to create project guess in directory guess/...
 dependencies:
 - base >= 4.7 && < 5
 ```
-这个设置项决定了我们的程序会依赖哪些包，默认依赖标准库 base。我们将这部分改为：
+这个设置项决定了我们的程序会依赖哪些包，默认依赖标准库 base。Stack 快照的版本与 `base` 的版本相关，你的 `package.yaml` 中对 `base` 的版本要求可能不完全一样，使用自动给出的版本即可。我们将这部分改为：
 ```yaml
 dependencies:
 - base >= 4.7 && < 5
@@ -297,7 +305,7 @@ $ stack run
 ```
 当然，你也可以使用 `stack run` 一步编译运行。
 
-可以注意到，Stack 将编译结果放在 `guess/dist-newstyle` 下。为了减轻网络负担，在力所能及的情况下，提交作业时可以考虑不打包这个文件夹。
+可以注意到，Stack 将编译结果放在 `guess/.stack-work` 下。为了减轻网络负担，在力所能及的情况下，提交作业时可以考虑不打包这个文件夹。
 
 ## 获取 Hackage 上包的文档 {#hackage}
 
