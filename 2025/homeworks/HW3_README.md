@@ -323,14 +323,32 @@ $ stack run
 
 之前的作业的文档教过你如何使用 GHCi 加载你的程序中的定义。如果你希望将带 `main` 的程序编译为可执行文件（如 Windows 下的 `.exe`）而又不想创建 Cabal 或者 Stack 项目，可以参考此部分。
 
-首先，请保证**正确路径下**有你想要编译的文件。*如果你不知道什么是正确的路径，请参考上一次作业的帮助文档。*假如你想要编译 `HWn.hs`，且你的命令行已经和该文件在同一路径下，使用如下命令编译程序：
+首先，请保证**正确路径下**有你想要编译的文件。*如果你不知道什么是正确的路径，请参考上一次作业的帮助文档。*假如你想要编译 `HWn.hs`，且你的命令行已经和该文件在同一路径下，按照 `HWn.hs` 顶部模块声明分两种情况：
+```haskell
+module <模块名> where
 ```
-$ ghc HWn.hs
-Loaded package environment from ...
-[1 of 1] Compiling Main             ( HWn.hs, HWn.o )
-Linking HWn.exe ...
-```
-如果没有错误，当前路径下会出现 `HWn.exe`（Windows）或 `HWn`（macOS）。你可以通过如下的方式执行该程序：
+- 模块名为 `Main`；或没有给出模块声明
+
+  使用如下命令编译程序：
+  ```
+  $ ghc HWn.hs
+  Loaded package environment from ...
+  [1 of 1] Compiling Main             ( HWn.hs, HWn.o )
+  Linking HWn.exe ...
+  ```
+
+- 模块名为其他，如 `HWn`
+
+  使用如下命令指定 `main` 所在的模块名为 `HWn` 并编译程序：
+  ```
+  $ ghc -main-is HWn HWn.hs
+  Loaded package environment from ...
+  [1 of 1] Compiling HWn              ( HWn.hs, HWn.o )
+  Linking HWn.exe ...
+  ```
+
+
+在任意一种情况下，如果没有错误，当前路径下会出现 `HWn.exe`（Windows）或 `HWn`（macOS）。你可以通过如下的方式执行该程序：
 - Windows: `.\HWn.exe`
 - macOS: `./HWn`
 
