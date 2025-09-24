@@ -6,3 +6,4 @@ title = "Programming Haskell"
 
 [output.html]
 mathjax-support = true
+hash-files = true
