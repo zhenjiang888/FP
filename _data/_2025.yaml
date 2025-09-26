@@ -68,4 +68,20 @@ lectures:
       link: homeworks/HW4.hs
     - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-4”
     due: 2025/10/01 11:59AM
+- teacher: 张伟
+  date: 2025/09/26
+  slides:
+  - title: "第5章：函数的定义"
+    link: haskell/05_function_definition.html
+  - title: "第6章：List Comprehension"
+    link: haskell/06_list_comprehension.html
+  - title: "第7章：递归函数"
+    link: haskell/07_recursive_function.html
+  assignment:
+    descriptions:
+    - text: 【6】完成第5,6,7章课程讲义上的习题
+      linktitle: HW5.hs
+      link: homeworks/HW5.hs
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-5”
+    due: 2025/10/01 11:59AM
 updates: []
