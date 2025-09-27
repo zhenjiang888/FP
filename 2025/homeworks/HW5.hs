@@ -79,20 +79,20 @@ scalarProduct = _
 -- Ch.07
 
 -- Problem #1: define prelude functions using recursions
-and :: [Bool] -> Bool
-and = _
+and_ :: [Bool] -> Bool
+and_ = _
 
-concat :: [[a]] -> [a]
-concat = _
+concat_ :: [[a]] -> [a]
+concat_ = _
 
-(!!) :: [a] -> Int -> a
-(!!) = _
+(!!!) :: [a] -> Int -> a
+(!!!) = _
 
-replicate :: Int -> a -> [a]
-replicate = _
+replicate_ :: Int -> a -> [a]
+replicate_ = _
 
-elem :: Eq a => a -> [a] -> Bool
-elem = _
+elem_ :: Eq a => a -> [a] -> Bool
+elem_ = _
 -- End Problem #1
 
 -- Problem #2: merge ascending lists
