@@ -11,11 +11,11 @@ theExpr p f xs = _
 -- End Problem #1
 
 -- Problem #2: redefine map/filter with foldr
-filter :: (a -> Bool) -> [a] -> [a]
-filter p = foldr _ _
+filter_ :: (a -> Bool) -> [a] -> [a]
+filter_ p = foldr _ _
 
-map :: (a -> b) -> [a] -> [b]
-map f = foldr _ _
+map_ :: (a -> b) -> [a] -> [b]
+map_ f = foldr _ _
 -- End Problem #2
 
 -- Problem #3: error checking for binary string transmitter
