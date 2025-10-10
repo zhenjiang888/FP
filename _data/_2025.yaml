@@ -85,4 +85,16 @@ lectures:
     - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-5”
     - text: 本次作业模板有修改，请已经提交的同学重新提交一份
     due: 2025/10/10 11:59PM
+- teacher: 张伟
+  date: 2025/10/10
+  slides:
+  - title: "第8章：高阶函数"
+    link: haskell/08_higher_order_function.html
+  assignment:
+    descriptions:
+    - text: 【7】完成第8章课程讲义上的习题
+      linktitle: HW6.hs
+      link: homeworks/HW6.hs
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-6”
+    due: 2025/10/15 11:59AM
 updates: []
