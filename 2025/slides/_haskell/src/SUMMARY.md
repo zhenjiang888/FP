@@ -8,3 +8,4 @@
 - [列表推导式](./06_list_comprehension.md)
 - [递归函数](./07_recursive_function.md)
 - [高阶函数](./08_higher_order_function.md)
+- [类型和类簇](./09_declaring_type_and_type_class.md)
