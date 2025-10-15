@@ -97,4 +97,16 @@ lectures:
       link: homeworks/HW6.hs
     - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-6”
     due: 2025/10/15 11:59AM
+- teacher: 张伟
+  date: 2025/10/15
+  slides:
+  - title: "第9章：类型和类簇的声明/定义"
+    link: haskell/09_declaring_type_and_type_class.html
+  assignment:
+    descriptions:
+    - text: 【8】完成第9章课程讲义上的习题
+      linktitle: HW7.hs
+      link: homeworks/HW7.hs
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-7”
+    due: 2025/10/22 11:59AM
 updates: []
