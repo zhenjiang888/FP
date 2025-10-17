@@ -443,7 +443,7 @@ play board player =
 
 > <div class="warning">
 >
-> **作业 01**
+> **作业 02**
 >
 > 下载本章介绍的两个游戏的源代码，仔细阅读，并玩耍一下
 > - 下载链接：<http://www.cs.nott.ac.uk/~pszgmh/pih.html>
