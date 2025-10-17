@@ -9,3 +9,5 @@
 - [递归函数](./07_recursive_function.md)
 - [高阶函数](./08_higher_order_function.md)
 - [类型和类簇](./09_declaring_type_and_type_class.md)
+- [The Countdown Problem](./10_countdown_problem.md)
+- [交互式编程](./11_interactive_programming.md)
