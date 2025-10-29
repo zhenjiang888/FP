@@ -8,8 +8,10 @@
 - [列表推导式](./06_list_comprehension.md)
 - [递归函数](./07_recursive_function.md)
 - [高阶函数](./08_higher_order_function.md)
-- [类型和类簇](./09_declaring_type_and_type_class.md)
-- [The Countdown Problem](./10_countdown_problem.md)
-- [交互式编程](./11_interactive_programming.md)
-- [Monad](./12_monad_and_more.md)
-- [Monad 解析器](./13_monadic_parser.md)
+- [声明类型和类簇](./09_declaring_type_and_type_class.md)
+- [案例 Countdown 问题](./10_countdown_problem.md)
+- [交互式程序设计](./11_interactive_programming.md)
+- [Monad and More](./12_monad_and_more.md)
+- [案例 Monadic Parser](./13_monadic_parser.md)
+<!-- - [Foldable and Friend](./14_folable_and_friend.md) -->
+<!-- - [惰性求值](./15_lazy_evaluation.md) -->
