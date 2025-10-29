@@ -149,4 +149,16 @@ lectures:
       link: homeworks/HW10.hs
     - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-10”
     due: 2025/10/29 11:59AM
+- teacher: 张伟
+  date: 2025/10/29
+  slides:
+  - title: "第13章：Monadic Parser"
+    link: haskell/13_monadic_parser.html
+  assignment:
+    descriptions:
+    - text: 【12】完成第13章课程讲义上的习题
+      linktitle: HW11.hs
+      link: homeworks/HW11.hs
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-11”
+    due: 2025/11/05 11:59AM
 updates: []
