@@ -4,7 +4,7 @@ open import Data.Bool using (Bool; true; false; if_then_else_)
 
 import Relation.Binary.PropositionalEquality as Eq
 open Eq using (_≡_; refl)
-open Eq.≡-Reasoning using (begin_; step-≡; step-≡˘; _≡⟨⟩_; _∎)
+open Eq.≡-Reasoning using (begin_; step-≡-⟩; step-≡-⟨; step-≡-∣; _∎)
 
 -- problem 17.1
 data day : Set where
@@ -12,7 +12,7 @@ data day : Set where
 
 -- problem 17.2
 nextday : day → day
-nextday = ?
+nextday = {!   !}
 
 -- problem 17.3
 ite-arg : ∀ {ℓ ℓ′} {A : Set ℓ} {B : Set ℓ′}
@@ -22,4 +22,4 @@ ite-arg : ∀ {ℓ ℓ′} {A : Set ℓ} {B : Set ℓ′}
     ----------------------
   → f (if b then x else y)
   ≡ (if b then f x else f y)
-ite-arg = ?
+ite-arg = {!   !}
