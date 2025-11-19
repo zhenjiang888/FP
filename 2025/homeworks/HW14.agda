@@ -12,6 +12,7 @@ module HW14 where
 
 open import Data.Nat using (ℕ; zero; suc; _+_; _*_)
 open import Data.Bool using (Bool; true; false; _∨_; if_then_else_)
+open import Data.Vec using (Vec; []; _∷_)
 open import Data.List using (List; []; _∷_)
 
 import Relation.Binary.PropositionalEquality as Eq
@@ -22,11 +23,11 @@ open Eq.≡-Reasoning using (begin_; step-≡-⟩; step-≡-⟨; step-≡-∣; _
 
 -- problem 1.1: commutativity of _*_
 *-comm : (x y : ℕ) → x * y ≡ y * x
-*-comm = ?
+*-comm = {!   !}
 
 -- problem 1.2: associativity of _*_
 *-assoc : (x y z : ℕ) → (x * y) * z ≡ x * (y * z)
-*-assoc = ?
+*-assoc = {!   !}
 
 -- problem 2: prove the theorems.
 -- remark: the standard library provides the following comparison based on decidability
@@ -56,12 +57,34 @@ suc x < suc y = x < y
 
 -- problem 2.1
 n≮n : (n : ℕ) → n < n ≡ false
-n≮n = ?
+n≮n = {!   !}
 
 -- problem 2.2
 <-antisym : (x y : ℕ) → x < y ≡ true → y < x ≡ false
-<-antisym = ?
+<-antisym = {!   !}
 
 -- problem 2.3
 <-trichotomy : (x y : ℕ) → x < y ∨ x ≟ y ∨ y < x ≡ true
-<-trichotomy = ?
+<-trichotomy = {!   !}
+
+
+-- Chap. 19
+
+-- This is equivalent to adding a `(A : Set)` to every type with a free variable `A`
+variable
+  A : Set
+
+takeWhile : (p : A → Bool) → List A → List A
+takeWhile = {!   !}
+
+-- this function is usually named `replicate` instead of `repeat`
+replicate : ℕ → A → List A
+replicate = {!   !}
+
+prop : (a : A) (n : ℕ)
+  → (p : A → Bool)
+  → p a ≡ true
+    -------------------------------------
+  → takeWhile p (replicate n a) ≡ replicate n a
+prop = {!   !}
+
