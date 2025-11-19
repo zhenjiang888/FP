@@ -193,5 +193,17 @@ lectures:
     - text: 如何安装 Agda 环境？
       link: https://higher-order.fun/cn/2023/11/15/InstallAgda.html
     due: 2025/11/19 11:59AM
-
+- teacher: 胡振江
+  date: 2025/11/19
+  slides:
+  - title: "Chapter 18: Natural Numbers in Agda"
+    link: ch18_agda_nat.pdf
+  - title: "Chapter 19: Lists in Agda"
+    link: ch19_agda_list.pdf
+  assignment:
+    descriptions:
+    - text: 【15】完成第18,19章课程讲义上的习题。
+      link: homeworks/HW14.agda
+    - text: 请注意本次作业提交时，邮件标题应为：计算概论作业-2500012345-张三-14
+    due: 2025/11/26 11:59AM
 updates: []
