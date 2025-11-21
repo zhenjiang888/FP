@@ -66,9 +66,9 @@
 在 `GHCi` 中，使用命令 `:type` 可以确定一个表达式的类型 (无需评估这个表达式的值)
 
 <p><center>
-    <img src="image/type_eval.png",
-         alt="Type-Evaluation",
-         width="60%",
+    <img src="image/type_eval.png"
+         alt="Type-Evaluation"
+         width="60%"
          height="60%" />
 </center></p>
 
@@ -138,9 +138,9 @@
 单/双精度浮点数类型 (exported by Prelude)
 
 <p><center>
-    <img src="image/float_double.png",
-         alt="Float-Double",
-         width="60%",
+    <img src="image/float_double.png"
+         alt="Float-Double"
+         width="60%"
          height="60%" />
 </center></p>
 
@@ -149,9 +149,9 @@
 一个 list 是由若干个相同类型的值形成的序列。
 
 <p><center>
-    <img src="image/type_list.png",
-         alt="Type-List",
-         width="75%",
+    <img src="image/type_list.png"
+         alt="Type-List"
+         width="75%"
          height="75%" />
 </center></p>
 
@@ -170,9 +170,9 @@
   - 因此，`[[T]]` 也是一个合法的类型
 
 <p><center>
-    <img src="image/list_of_list.png",
-         alt="List-List",
-         width="80%",
+    <img src="image/list_of_list.png"
+         alt="List-List"
+         width="80%"
          height="80%" />
 </center></p>
 
@@ -409,9 +409,9 @@ ghci> :type (+)
 
 
  <p><center>
-    <img src="image/type_class_three.png",
-         alt="Type-Class-Three",
-         width="60%",
+    <img src="image/type_class_three.png"
+         alt="Type-Class-Three"
+         width="60%"
          height="60%" />
 </center></p>
 
