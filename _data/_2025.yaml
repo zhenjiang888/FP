@@ -206,4 +206,17 @@ lectures:
       link: homeworks/HW14.agda
     - text: 请注意本次作业提交时，邮件标题应为：计算概论作业-2500012345-张三-14
     due: 2025/11/26 11:59AM
+- teacher: 胡振江
+  date: 2025/11/26
+  slides:
+  - title: "Chapter 20: Internal Verification"
+    link: ch20_internal.pdf
+  - title: "Chapter 21: Equality Theory"
+    link: ch21_equality.pdf
+  assignment:
+    descriptions:
+    - text: 【16】完成第20,21章课程讲义上的习题。
+      link: homeworks/HW15.agda
+    - text: 请注意本次作业提交时，邮件标题应为：计算概论作业-2500012345-张三-15
+    due: 2025/12/03 11:59AM
 updates: []
