@@ -237,5 +237,17 @@ lectures:
     - text: 【18】完成第22章的BMF-1, BMF-2, BMF-3，以任何形式提交均可，同时完成第23章课程讲义上的习题。
       link: homeworks/HW16.agda
     - text: 请注意本次作业提交时，邮件标题应为：计算概论作业-2500012345-张三-16
-    due: 2025/12/17 11:59AM
+    - text: 本次作业提交时间将会延长一周。
+    due: 2025/12/24 11:59AM
+- teacher: 胡振江
+  date: 2024/12/17
+  slides:
+  - title: "Chapter 24. Homomorphism"
+    link: Ch24.pdf
+  assignment:
+    descriptions:
+    - text: 【19】完成第24章课程讲义上的BMF2-1习题。
+      link: homeworks/HW17.agda
+    - text: 请注意本次作业提交时，邮件标题应为：计算概论作业-2500012345-张三-17
+    due: 2025/12/24 11:59AM
 updates: []
