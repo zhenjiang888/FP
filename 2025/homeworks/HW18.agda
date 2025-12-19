@@ -9,7 +9,7 @@ open import Data.List.Properties using (foldr-fusion)
 
 import Relation.Binary.PropositionalEquality as Eq
 open Eq using (_≡_; _≗_; refl; trans; sym; cong; cong-app; subst)
-open Eq.≡-Reasoning using (begin_; _≡⟨⟩_; step-≡; _∎)
+open Eq.≡-Reasoning using (begin_; step-≡-⟩; step-≡-∣; _∎)
 
 foldr-map-fusion : ∀ {A : Set} {B : Set} {C : Set}
   → (f : A → B)
