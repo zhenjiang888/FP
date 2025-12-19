@@ -250,4 +250,17 @@ lectures:
       link: homeworks/HW17.agda
     - text: 请注意本次作业提交时，邮件标题应为：计算概论作业-2500012345-张三-17
     due: 2025/12/24 11:59AM
+- teacher: 胡振江
+  date: 2025/12/19
+  slides:
+  - title: "Chapter 25: Fusion and Tupling"
+    link: Ch25.pdf
+  assignment:
+    descriptions:
+    - text: 【20】完成第24章课程讲义上的习题BMF2-2和BMF2-3以及25章课程讲义上的习题BMF3-2。
+      link: homeworks/HW18.hs
+    - text: 【20】完成第25章课程讲义上的习题BMF3-1。
+      link: homeworks/HW18.agda
+    - text: 本次作业的两个文件都需要作为邮件的附件提交。请注意本次作业提交时，邮件标题应为： 计算概论作业-2500012345-张三-18
+    due: 2025/12/24 11:59AM
 updates: []
