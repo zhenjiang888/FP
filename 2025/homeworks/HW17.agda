@@ -30,6 +30,28 @@ open Eq using (_≡_; _≢_; refl; trans; sym; cong; cong-app; subst)
 open Eq.≡-Reasoning using (begin_; step-≡-⟩; step-≡-∣; _∎)
 open import Function using (id; _∘_)
 
+module semigroup where
+  record IsSemigroup {A : Set} (_⊕_ : A → A → A) : Set where
+    field assoc : ∀ x y z → (x ⊕ y) ⊕ z ≡ x ⊕ (y ⊕ z)
+
+  open IsSemigroup public
+
+  open import Data.Nat using (_+_)
+  open import Data.Nat.Properties using (+-assoc)
+  ℕ-add-is-semigroup : IsSemigroup _+_
+  ℕ-add-is-semigroup .assoc = +-assoc
+
+  open import Data.Nat using (_⊔_)
+  open import Data.Nat.Properties using (⊔-assoc)
+  ℕ-⊔-is-semigroup : IsSemigroup _⊔_
+  ℕ-⊔-is-semigroup .assoc = ⊔-assoc
+
+  open import Data.List using (List; _++_; [])
+  open import Data.List.Properties using (++-assoc)
+  List-++-is-semigroup : ∀ {A : Set} → IsSemigroup {List A} _++_
+  List-++-is-semigroup .assoc = ++-assoc
+open semigroup
+
 -- Chapter 24
 module BMF2-1 where
 
@@ -77,7 +99,7 @@ module BMF2-1 where
 
   -- 1. prove 'split' is a homomorphism
   split : ∀ {A : Set} → NList A → List A × A
-  split = reduce ? ∘ map ?
+  split = reduce {!   !} ∘ map {!   !}
 
   -- bonus: you may also want to prove the following theorems:
   --
@@ -97,7 +119,7 @@ module BMF2-1 where
   -- to verify your 'split' is correct. after defining 'split', proving the following
   -- should be as easy as filling in 'refl'.
   split-is-correct : split (1 ∷′ 2 ∷′ 3 ∷′ [ 4 ]′) ≡ (1 ∷ 2 ∷ 3 ∷ [] , 4)
-  split-is-correct = ?
+  split-is-correct = {!   !}
 
   -- bonus: find a proper way to prove your split is indeed correct:
   --
@@ -125,7 +147,7 @@ module BMF2-1 where
 
   init-is-not-homomorphism : ∀ {_⊗_} (m : IsSemigroup _⊗_)
     → ¬ IsHomomorphism NList-++′-is-semigroup m (init {ℕ})
-  init-is-not-homomorphism {_⊗_} m H = ?
+  init-is-not-homomorphism {_⊗_} m H = {!   !}
 
   -- Hint: you might want to follow this guideline below if you get stuck.
   --
