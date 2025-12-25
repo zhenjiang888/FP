@@ -263,4 +263,14 @@ lectures:
       link: homeworks/HW18.agda
     - text: 本次作业的两个文件都需要作为邮件的附件提交。请注意本次作业提交时，邮件标题应为： 计算概论作业-2500012345-张三-18
     due: 2025/12/24 11:59AM
+- teacher: 胡振江
+  date: 2025/12/24
+  slides:
+  - title: "Chapter 26. Automatic Parallelization"
+    link: Ch26.pdf
+  - title: "Chapter 27. Maximum Marking Problems"
+    link: Ch27.pdf
+  assignment:
+    descriptions:
+    - text: 【21】本次课程无课后作业。
 updates: []
