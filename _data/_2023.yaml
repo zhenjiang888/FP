@@ -1,0 +1,247 @@
+teaching_assistants: 
+- 关智超
+- 曹奕远
+
+lectures: 
+- teacher: 胡振江
+  date: 2023/09/13
+  slides:
+  - title: "导言：函数式程序设计"
+    link: intro.pdf
+  - title: "第一章：概论"
+    link: ch1.pdf
+  assignment:
+    descriptions:
+    - text: 【1】完成课程讲义上的习题（以任意方式提交）
+      due: 2023/09/19
+    appendix:
+    - text: 如何安装 Haskell 环境？
+      link: https://higher-order.fun/cn/2023/08/27/InstallHaskell.html
+- teacher: 张伟
+  date: 2023/09/15
+  slides:
+  - title: "第2.1章：初见函数式思维"
+    link: ch02.1 functional thinking.pdf
+  - title: "第2.2章：初见Haskell"
+    link: ch02.2 meeting haskell.pdf
+  assignment:
+    descriptions:
+    - text: 【2】完成课程讲义上的习题1~2
+      link: homeworks/HW2.hs
+    - text: 请使用提供的模板文件，对其的使用可以查看
+      linktitle: 此页面
+      link: /FP/2023/homeworks/HW2_README
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2300012345-张三-2”
+    due: 2023/09/19
+- teacher: 张伟
+  date: 2023/09/20
+  slides:
+  - title: "第2.2章：初见Haskell"
+    link: ch02.2 meeting haskell.pdf
+  assignment:
+    descriptions:
+    - text: 【3】完成课程讲义上的习题3~4
+      link: homeworks/HW3.hs
+    - text: 本次作业需要安装random包，换源方法请查看
+      linktitle: 此页面
+      link: /FP/2023/homeworks/HW3_README
+    - text: 你可能需要 `randomRIO` 这个函数，用法为 `n <- randomRIO (1, 100)`
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2300012345-张三-3”
+    due: 2023/09/26
+- teacher: 张伟
+  date: 2023/09/22
+  slides:
+  - title: "第3章：类型与类簇"
+    link: ch03 type and type class.pdf
+  - title: "第4章：函数的定义"
+    link: ch04 function definition.pdf
+  assignment:
+    descriptions:
+    - text: 【4】完成第3章、第4章课程讲义上的习题
+      link: homeworks/HW4.hs
+    due: 2023/09/26
+- teacher: 张伟
+  date: 2023/09/27
+  slides:
+  - title: "第5章：List Comprehension"
+    link: ch05 list comprehension.pdf
+  - title: "第6章：递归函数"
+    link: ch06 recursive function.pdf
+  - title: "第7章：高阶函数"
+    link: ch07 higher-order function.pdf
+  assignment:
+    descriptions:
+    - text: 【5】完成第5章和第6章课程讲义上的习题
+      link: homeworks/HW5.hs
+    due: 2023/10/10
+- teacher: 张伟
+  date: 2023/10/11
+  slides:
+  - title: "第8章：类型和类簇的声明/定义"
+    link: ch08 type and type class - definition.pdf
+  assignment:
+    descriptions:
+    - text: 【6】完成第7章课程讲义上的习题
+      link: homeworks/HW6.hs
+    due: 2023/10/17
+- teacher: 张伟
+  date: 2023/10/13
+  slides:
+  - title: "第9章：An Example: The Countdown Problem"
+    link: ch09 an example - the countdown problem.pdf
+  - title: "第10章：交互式程序设计"
+    link: ch10 interactive programming.pdf
+  assignment:
+    descriptions:
+    - text: 【7】完成第8章课程讲义上的习题
+      link: homeworks/HW7.hs
+    - text: 【8】完成第9章课程讲义上的习题
+      link: homeworks/HW8.hs
+    due: 2023/10/17
+- teacher: 张伟
+  date: 2023/10/18
+  slides:
+  - title: "第12章：Monads and More"
+    link: ch12 monads and more.pdf
+  assignment:
+    descriptions:
+    - text: 【9】完成第10章课程讲义上的习题，仅需要提交第一题的代码。
+      link: homeworks/HW9.hs
+    due: 2023/10/25
+- teacher: 张伟
+  date: 2023/10/25
+  slides:
+  - title: "范畴论、Functor、Monad"
+    link: ch12 monads and more - CT Version.pdf
+  assignment:
+    descriptions:
+    - text: 【10】完成第12章课程讲义上的习题。
+      link: homeworks/HW10.hs
+    due: 2023/10/31
+- teacher: 张伟
+  date: 2023/11/1
+  slides:
+  - title: "第13章：Monadic Parser"
+    link: ch13 an example - monadic parser.pdf
+  assignment:
+    descriptions:
+    - text: 【11】完成第13章课程讲义上的习题。
+      link: homeworks/HW11.hs
+    due: 2023/11/7
+- teacher: 张伟
+  date: 2023/11/3
+  slides:
+  - title: "第14章：Foldables and Friends"
+    link: ch14 foldables and friends.pdf
+  - title: "第15章：计算模型—Lazy Evaluation"
+    link: ch15 lazy evaluation.pdf
+  assignment:
+    descriptions:
+    - text: 【12】完成第14、15章课程讲义上的习题。
+      link: homeworks/HW12.hs
+    due: 2023/11/7
+- teacher: 胡振江
+  date: 2023/11/8
+  slides:
+  - title: "Chapter 16: Introduction to Calculational Programming"
+    link: ch16_intro.pdf
+  - title: "Chapter 17: Basics of Agda"
+    link: ch17_agda_basics.pdf
+  assignment:
+    descriptions:
+    - text: 【13】完成第16章课程讲义上的习题。
+      link: homeworks/HW13.hs
+    due: 2023/11/21
+- teacher: 胡振江
+  date: 2023/11/15
+  slides:
+  - title: "Chapter 18: Natural Numbers in Agda"
+    link: ch18_agda_nat.pdf
+  assignment:
+    descriptions:
+    - text: 【14】完成第17章课程讲义上的习题。
+      link: homeworks/HW14.agda
+    appendix:
+    - text: 如何安装 Agda 环境？
+      link: https://higher-order.fun/cn/2023/11/15/InstallAgda.html
+    due: 2023/11/28
+- teacher: 李戈
+  date: 2023/11/19
+  slides:
+  - title: "计算机的基本原理"
+    link: "A01  计算机的基本原理.pdf"
+- teacher: 胡振江
+  date: 2023/11/22
+  slides:
+  - title: "Chapter 19: Lists in Agda"
+    link: ch19_agda_list.pdf
+  assignment:
+    descriptions:
+    - text: 【15】完成第18、19章课程讲义上的习题。
+      link: homeworks/HW15.agda
+    due: 2023/11/28
+- teacher: 胡振江
+  date: 2023/11/29
+  slides:
+  - title: "Chapter 20: Internal Verification"
+    link: ch20_internal.pdf
+  assignment:
+    descriptions:
+    - text: 【16】完成第20章课程讲义上的习题。
+      link: homeworks/HW16.agda
+    due: 2023/12/5
+- teacher: 胡振江
+  date: 2023/12/6
+  slides:
+  - title: "第21章： 等式理论"
+    link: ch21_equality.pdf
+  - title: "Chapter 22. Bird Meertens Formalism (BMF)"
+    link: Ch22.pdf
+  assignment:
+    descriptions:
+    - text: 【17】完成第21章课程讲义上的习题。
+      link: homeworks/HW17.agda
+    due: 2023/12/12
+- teacher: 胡振江
+  date: 2023/12/13
+  slides:
+  - title: "第23章：序列理论概述 (in Agda)"
+    link: Ch23_BMF_agda.pdf
+  assignment:
+    descriptions:
+    - text: 【18】完成第22章课程讲义上的作业习题，以任何形式提交均可。
+    due: 2023/12/19
+- teacher: 胡振江
+  date: 2023/12/20
+  slides:
+  - title: "Chapter 24. Homomorphism"
+    link: Ch24.pdf
+  assignment:
+    descriptions:
+    - text: 【19】完成第23章课程讲义上的作业习题，本周作业会给更长的时间完成。
+      link: homeworks/HW19.agda
+    due: 2024/1/2
+- teacher: 胡振江
+  date: 2023/12/20
+  slides:
+  - title: "Chapter 25. Fusion and Tupling"
+    link: Ch25.pdf
+  assignment:
+    descriptions:
+    - text: 【20】完成第24章和第25章课程讲义上的作业习题。
+      link: homeworks/HW20.hs
+    due: 2024/1/2
+- teacher: 胡振江
+  date: 2023/12/29
+  slides:
+  - title: "Chapter 26: Unfold"
+    link: Ch26.pdf
+  - title: "Chapter 27. Automatic Parallelization"
+    link: Ch27.pdf
+  assignment:
+    descriptions:
+    - text: 【21】完成第26章课程讲义上的作业习题，祝大家新年快乐！
+      link: homeworks/HW21.hs
+    due: 2024/1/2
+
+updates: []

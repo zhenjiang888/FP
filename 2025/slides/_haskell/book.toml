@@ -1,0 +1,9 @@
+[book]
+authors = ["caturn"]
+language = "zh-cn"
+src = "src"
+title = "Programming Haskell"
+
+[output.html]
+mathjax-support = true
+hash-files = true

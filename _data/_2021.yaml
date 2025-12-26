@@ -1,0 +1,245 @@
+teaching_assistants: [谢睿峰]
+lectures:
+- teacher: 胡振江
+  date: 2021/09/15
+  slides:
+  - title: "导言：函数式程序设计"
+    link: intro.pdf
+  - title: "第一章：概论"
+    link: ch1.pdf
+  assignment:
+    descriptions:
+    - text: 完成课程讲义上的习题
+    due: 2021/09/22
+- teacher: 张伟
+  date: 2021/09/17
+  slides:
+  - title: "第二章：函数式编程第一步"
+    link: ch2.pdf
+  - title: "初见函数式思维"
+    link: FP2021 FunctionalThinking V0.1.pdf
+  assignment:
+    descriptions:
+    - text: 完成课程讲义上的习题
+    due: 2021/09/22
+- teacher: 张伟
+  date: 2021/09/22
+  slides:
+  - title: "初见Haskell"
+    link: FP2021 MeetingHaskell V0.1.pdf
+  assignment:
+    descriptions:
+    - text: 完成课程讲义上的习题1～3
+      link: homeworks/HW3_1.hs
+    - text: 完成课程讲义上的习题4，有困难上机课直接提问，作业按正确性评分
+      link: homeworks/HW3_2.hs
+    due: 2021/09/29
+- teacher: 张伟
+  date: 2021/09/24
+  slides:
+  - title: "初见Haskell"
+    link: FP2021 MeetingHaskell V0.1.pdf
+- teacher: 张伟
+  date: 2021/09/29
+  slides:
+  - title: "第三章：类型和类族"
+    link: ch3.pdf
+  assignment:
+    descriptions:
+    - text: 完成讲义上的习题，第3、4两题请按说明填写在注释里面
+      link: homeworks/HW4.hs
+    due: 2021/10/13
+- teacher: 张伟
+  date: 2021/10/08
+  slides:
+  - title: "第四章：函数定义"
+    link: ch4.pdf
+  - title: "第五章：List Comprehension"
+    link: ch5.pdf
+  assignment:
+    descriptions:
+    - text: 完成讲义上的习题
+      link: homeworks/HW5.hs
+    due: 2021/10/13
+- teacher: 张伟
+  date: 2021/10/13
+  slides:
+  - title: "第六章：递归函数"
+    link: ch6.pdf
+  - title: "第七章：高阶函数"
+    link: ch7.pdf
+  assignment:
+    descriptions:
+    - text: 完成讲义上的习题
+      link: homeworks/HW6.hs
+    due: 2021/10/20
+- teacher: 张伟
+  date: 2021/10/15
+  slides:
+  - title: "第八章：类型和类族的定义"
+    link: ch8.pdf
+  assignment:
+    descriptions:
+    - text: 完成讲义上的习题
+      link: homeworks/HW7.hs
+    due: 2021/10/27
+- teacher: 张伟
+  date: 2021/10/20
+  slides:
+  - title: "第九章：倒计时问题"
+    link: ch9.pdf
+  assignment:
+    descriptions:
+    - text: 完成讲义上的习题
+      link: homeworks/HW8.hs
+    due: 2021/10/27
+- teacher: 张伟
+  date: 2021/10/22
+  slides:
+  - title: "第十章：交互式程序设计"
+    link: ch10.pdf
+  assignment:
+    descriptions:
+    - text: 完成讲义上的习题
+      link: homeworks/HW9.hs
+    due: 2021/10/27
+- teacher: 张伟
+  date: 2021/10/27
+  slides:
+  - title: "第十二章：Monads and More"
+    link: ch12.pdf
+  assignment:
+    descriptions:
+    - text: 完成讲义上的习题
+      link: homeworks/HW10.hs
+    due: 2021/11/03
+- teacher: 张伟
+  date: 2021/10/27
+  slides:
+  - title: "第十三章：Monadic Parser"
+    link: ch13.pdf
+  assignment:
+    descriptions:
+    - text: 完成讲义上的习题
+      link: homeworks/HW10.hs
+    due: 2021/11/03
+- teacher: 张伟
+  date: 2021/11/03
+  slides:
+  - title: "第十四章：Foldable and Friends"
+    link: ch14.pdf
+  - title: "第十五章：计算模型：Lazy Evaluation"
+    link: ch15.pdf
+  assignment:
+    descriptions:
+    - text: 完成讲义上的习题
+      link: homeworks/HW11.hs
+    due: 2021/11/10
+- teacher: 张伟
+  date: 2021/11/05
+  slides:
+  - title: "函数式编程思想在其他编程语言中的应用"
+    link: FP in other lang V0.1.pdf
+- teacher: 胡振江
+  date: 2021/11/10
+  slides:
+  - title: "第十六章：Introduction to Calculational Programming"
+    link: program-calculation-intro.pdf
+  - title: "第十七章：Agda的基本概念(1)"
+    link: Agda1.pdf
+  assignment:
+    descriptions:
+    - text: 完成讲义上的习题
+      link: homeworks/HW12.hs
+    - text: 安装Agda的开发环境
+    due: 2021/11/24
+- teacher: 李戈
+  date: 2021/11/12
+  slides:
+  - title: 计算机的基本原理
+    link: lec1.A01-计算机的基本原理.pdf
+- teacher: 代亚非
+  date: 2021/11/19
+  slides:
+  - title: 计算机硬件系统
+    link: lec2.2021-硬件系统-代亚非.pdf
+- teacher: 胡振江
+  date: 2021/11/24
+  slides:
+  - title: "第十七章：Agda的基本概念(1)"
+    link: Agda1.pdf
+  assignment:
+    descriptions:
+    - text: 完成讲义上的习题
+      link: homeworks/HW13.agda
+    due: 2021/12/01
+- teacher: 刘譞哲
+  date: 2021/11/26
+  slides:
+  - title: 计算机软件
+    link: lec5.系统软件.pdf
+- teacher: 胡振江
+  date: 2021/12/01
+  slides:
+  - title: "第十七章：Agda的基本概念(2)"
+    link: Agda2.pdf
+  assignment:
+    descriptions:
+    - text: 完成讲义上的习题
+      link: homeworks/HW14.agda
+    due: 2021/12/08
+- teacher: 胡振江
+  date: 2021/12/08
+  slides:
+  - title: "第十八章：序列理论概述(1)"
+    link: BMF1.pdf
+  assignment:
+    descriptions:
+    - text: 完成讲义上的习题
+      link: homeworks/HW15.agda
+    due: 2021/12/15
+- teacher: 胡振江
+  date: 2021/12/15
+  slides:
+  - title: "第十八章：序列理论概述(2)"
+    link: BMF1-2.pdf
+  - title: "Bird Meertens Formalism: Homomorphism"
+    link: BMF2-1.pdf
+  assignment:
+    descriptions:
+    - text: 完成讲义上的习题
+      link: homeworks/HW16.agda
+    due: 2021/12/29
+- teacher: 胡振江
+  date: 2021/12/22
+  slides:
+  - title: "Bird Meertens Formalism: Homomorphism"
+    link: BMF2-1.pdf
+  - title: "Bird Meertens Formalism: Directed Reduction (Foldl)"
+    link: BMF2-2.pdf
+  assignment:
+    descriptions:
+    - text: 完成讲义上的习题
+      link: homeworks/HW17.hs
+    due: 2021/01/05
+- teacher: 胡振江
+  date: 2021/12/24
+  slides:
+  - title: "Bird Meertens Formalism: Fusion and Tupling"
+    link: BMF3.pdf
+  - title: "Bird Meertens Formalism: An Application"
+    link: AP1.pdf
+  assignment:
+    descriptions:
+    - text: 完成讲义上的习题BMF3-1
+      link: homeworks/HW18.agda
+    - text: 完成讲义上的习题BMF3-2
+      link: homeworks/HW19.hs
+    due: 2021/01/05
+updates:
+- slides: "第十七章：Agda的基本概念(1)"
+  link: Agda1.pdf
+  date: 2021/11/24
+- slides: "Bird Meertens Formalism: Homomorphism"
+  link: BMF2-1.pdf
+  date: 2021/12/22

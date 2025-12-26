@@ -1,0 +1,10 @@
+.sass-cache
+_site
+.jekyll-cache
+vendor
+Gemfile
+Gemfile.lock
+.vscode/
+.DS_Store
+
+/*/slides/haskell/

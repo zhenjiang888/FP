@@ -1,0 +1,287 @@
+teaching_assistants: 
+- 黄柘铳
+- 曹奕远
+
+lectures: 
+- teacher: 胡振江
+  date: 2024/09/11
+  slides:
+  - title: "导言：函数式程序设计"
+    link: intro.pdf
+  - title: "第1章：概论"
+    link: 第01章 概论.pdf
+  assignment:
+    descriptions:
+    - text: 【1】完成课程讲义上的习题（以任意方式提交）
+    due: 2024/09/18 11:59AM
+    appendix:
+    - text: 如何安装 Haskell 环境？
+      link: https://higher-order.fun/cn/2023/08/27/InstallHaskell.html
+- teacher: 张伟
+  date: 2024/09/13
+  slides:
+  - title: "第2章：初见函数式思维"
+    link: 第02章 初见函数式思维.pdf
+  assignment:
+    descriptions:
+    - text: 【2】本次课程无课后作业
+- teacher: 张伟
+  date: 2024/09/18
+  slides:
+  - title: "第3章：初见Haskell"
+    link: 第03章 初见Haskell.pdf
+  assignment:
+    descriptions:
+    - text: 【3】完成课程讲义上的习题1~3
+      linktitle: HW2.hs
+      link: homeworks/HW2.hs
+    - text: 请使用提供的模板文件，对其的使用可以查看
+      linktitle: 此页面
+      link: /FP/2024/homeworks/HW2_README
+    - text: 请注意本次作业提交时，邮件主题应为“计算概论作业-2400012345-张三-2”
+    due: 2024/09/25 11:59AM
+- teacher: 张伟
+  date: 2024/09/20
+  slides:
+  - title: "第3章：初见Haskell"
+    link: 第03章 初见Haskell.pdf
+  assignment:
+    descriptions:
+    - text: 【4】完成课程讲义上的习题4
+      linktitle: HW3.hs
+      link: homeworks/HW3.hs
+    - text: 本次作业需要安装random包，换源方法请查看
+      linktitle: 此页面
+      link: /FP/2024/homeworks/HW3_README
+    - text: 你可能需要 `randomRIO` 这个函数，用法为 `n <- randomRIO (1, 100)`
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-3”
+    due: 2024/09/25 11:59AM
+- teacher: 张伟
+  date: 2024/09/25
+  slides:
+  - title: "第4章：类型与类簇"
+    link: 第04章 类型与类簇.pdf
+  assignment:
+    descriptions:
+    - text: 【5】完成第4章课程讲义上的习题1-2
+      linktitle: HW4.hs
+      link: homeworks/HW4.hs
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-4”
+    due: 2024/10/02 11:59AM
+- teacher: 张伟
+  date: 2024/09/27
+  slides:
+  - title: "第5章：函数的定义"
+    link: 第05章 函数的定义.pdf
+  - title: "第6章：List Comprehension"
+    link: 第06章 List Comprehension.pdf
+  assignment:
+    descriptions:
+    - text: 【6】完成第5章和第6章课程讲义上的习题
+      linktitle: HW5.hs
+      link: homeworks/HW5.hs
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-5”
+    due: 2024/10/02 11:59AM
+- teacher: 张伟
+  date: 2024/10/09
+  slides:
+  - title: "第7章：递归函数"
+    link: 第07章 Recursive Function.pdf
+  - title: "第8章：高阶函数"
+    link: 第08章 High-order Function.pdf
+  assignment:
+    descriptions:
+    - text: 【7】完成第7章和第8章课程讲义上的习题
+      linktitle: HW6.hs
+      link: homeworks/HW6.hs
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-6”
+    due: 2024/10/16 11:59AM
+- teacher: 张伟
+  date: 2024/10/11
+  slides:
+  - title: "第9章：类型和类簇的声明/定义"
+    link: 第09章 Declaring Type and Type Class.pdf
+  assignment:
+    descriptions:
+    - text: 【8】本次课程无课后作业
+- teacher: 张伟
+  date: 2024/10/16
+  slides:
+  - title: "第9章：类型和类簇的声明/定义"
+    link: 第09章 Declaring Type and Type Class.pdf
+  - title: "第10章：An Example: The Countdown Problem"
+    link: 第10章 An Example - The Countdown Problem.pdf
+  assignment:
+    descriptions:
+    - text: 【9】完成第9章课程讲义上的习题
+      linktitle: HW7.hs
+      link: homeworks/HW7.hs
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-7”
+    due: 2024/10/23 11:59AM
+- teacher: 张伟
+  date: 2024/10/18
+  slides:
+  - title: "第10章：An Example: The Countdown Problem"
+    link: 第10章 An Example - The Countdown Problem.pdf
+  - title: "第11章：交互式程序设计"
+    link: 第11章 Interactive Programming.pdf
+  assignment:
+    descriptions:
+    - text: 【10】完成第10章课程讲义上的习题
+      linktitle: HW8.hs
+      link: homeworks/HW8.hs
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-8”
+    due: 2024/10/23 11:59AM
+- teacher: 张伟
+  date: 2024/10/23
+  slides:
+  - title: "第11章：交互式程序设计"
+    link: 第11章 Interactive Programming.pdf
+  - title: "第12章：Monads and More"
+    link: 第12章 monads and more.pdf
+  - title: "第12章：Monads and More(带动画版PPT)"
+    link: 第12章 monads and more - 带动画.pdf
+  assignment:
+    descriptions:
+    - text: 【11】完成第11章课程讲义上的习题，仅需要提交第一题的代码。
+      link: homeworks/HW9.hs
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-9”
+    due: 2024/10/30 11:59AM
+- teacher: 张伟
+  date: 2024/10/25
+  slides:
+  - title: "第12章：Monads and More(范畴论版PPT)"
+    link: 第12章 monads and more - CT Version.pdf
+  assignment:
+    descriptions:
+    - text: 【12】完成第12章课程讲义上的习题。
+      link: homeworks/HW10.hs
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-10”
+    due: 2024/10/30 11:59AM
+- teacher: 张伟
+  date: 2024/10/30
+  slides:
+  - title: "第12章：Monads and More(范畴论版PPT)"
+    link: 第12章 monads and more - CT Version.pdf
+  assignment:
+    descriptions:
+    - text: 【13】本次课程无课后作业。
+- teacher: 张伟
+  date: 2024/11/1
+  slides:
+  - title: "第13章：Monadic Parser"
+    link: 第13章 an example - monadic parser.pdf
+  assignment:
+    descriptions:
+    - text: 【14】本次课程无课后作业。
+- teacher: 张伟
+  date: 2024/11/6
+  slides:
+  - title: "第14章：Foldables and Friends"
+    link: 第14章 foldables and friends.pdf
+  - title: "第15章：计算模型—Lazy Evaluation"
+    link: 第15章 lazy evaluation.pdf
+  assignment:
+    descriptions:
+    - text: 【15】完成第13、15章课程讲义上的习题。
+      link: homeworks/HW11.hs
+    due: 2024/11/20 11:59AM
+- teacher: 胡振江
+  date: 2024/11/20
+  slides:
+  - title: "Chapter 16: Introduction to Calculational Programming"
+    link: ch16_intro.pdf
+  - title: "Chapter 17: Basics of Agda"
+    link: ch17_agda_basics.pdf
+  assignment:
+    descriptions:
+    - text: 【16】完成第16章课程讲义上的习题。
+      link: homeworks/HW12.hs
+    appendix:
+    - text: 如何安装 Agda 环境？
+      link: https://higher-order.fun/cn/2023/11/15/InstallAgda.html
+    due: 2024/11/27 11:59AM
+- teacher: 胡振江
+  date: 2024/11/27
+  slides:
+  - title: "Chapter 17: Basics of Agda"
+    link: ch17_agda_basics.pdf
+  - title: "Chapter 18: Natural Numbers in Agda"
+    link: ch18_agda_nat.pdf
+  assignment:
+    descriptions:
+    - text: 【17】完成第17章课程讲义上的习题。
+      link: homeworks/HW13.agda
+    due: 2024/12/04 11:59AM
+- teacher: 胡振江
+  date: 2024/12/4
+  slides:
+  - title: "Chapter 18: Natural Numbers in Agda"
+    link: ch18_agda_nat.pdf
+  - title: "Chapter 19: Lists in Agda"
+    link: ch19_agda_list.pdf
+  assignment:
+    descriptions:
+    - text: 【18】完成第18章课程讲义上的习题。
+      link: homeworks/HW14.agda
+    due: 2024/12/11 11:59AM
+- teacher: 胡振江
+  date: 2024/12/11
+  slides:
+  - title: "Chapter 19: Lists in Agda"
+    link: ch19_agda_list.pdf
+  - title: "Chapter 20: Internal Verification"
+    link: ch20_internal.pdf
+  assignment:
+    descriptions:
+    - text: 【19】完成第19，20章课程讲义上的习题。
+      link: homeworks/HW15.agda
+    due: 2024/12/18 11:59AM
+- teacher: 胡振江
+  date: 2024/12/18
+  slides:
+  - title: "第21章： 等式理论"
+    link: ch21_equality.pdf
+  - title: "Chapter 22. Bird Meertens Formalism (BMF)"
+    link: Ch22.pdf
+  assignment:
+    descriptions:
+    - text: 【20】完成第21章课程讲义上的习题。
+      link: homeworks/HW16.agda
+    due: 2024/12/25 11:59AM
+- teacher: 胡振江
+  date: 2024/12/20
+  slides:
+  - title: "第23章：序列理论概述 (in Agda)"
+    link: Ch23_BMF_agda.pdf
+  assignment:
+    descriptions:
+    - text: 【21】完成第22章的BMF-1, BMF-2, BMF-3，以任何形式提交均可，同时完成第23章课程讲义上的习题。
+      link: homeworks/HW17.agda
+    - text: 本次作业提交时间将会延长一周。
+    due: 2025/01/01 11:59AM
+- teacher: 胡振江
+  date: 2024/12/25
+  slides:
+  - title: "Chapter 24. Homomorphism"
+    link: Ch24.pdf
+  assignment:
+    descriptions:
+    - text: 【22】完成第24章课程讲义上的习题。
+      link: homeworks/HW18.hs
+    - text: BMF2-1为 Agda 题目，包含在HW17.agda中，BMF2-2为 Haskell 题目，包含在HW18.hs中。提交作业时两个文件烦请分别用两份邮件发送。
+    due: 2025/01/01 11:59AM
+- teacher: 胡振江
+  date: 2024/12/27
+  slides:
+  - title: "Chapter 25. Fusion and Tupling"
+    link: Ch25.pdf
+  - title: "Chapter 26. Automatic Parallelization"
+    link: Ch26.pdf
+  assignment:
+    descriptions:
+    - text: 【23】完成第25章课程讲义上的习题BMF3-2(2)。
+      link: homeworks/HW19.hs
+    due: 2025/01/08 11:59AM
+updates: []
+

@@ -1,0 +1,289 @@
+teaching_assistants: 
+- 黄柘铳
+- 余泰来
+
+lectures: 
+- teacher: 胡振江
+  date: 2025/09/10
+  slides:
+  - title: "导言：函数式程序设计"
+    link: intro.pdf
+  - title: "第1章：概论"
+    link: ch1.pdf
+  assignment:
+    descriptions:
+    - text: 【1】完成课程讲义上的习题（以任意方式提交）
+    due: 2025/09/17 11:59AM
+    appendix:
+    - text: 如何安装 Haskell 环境？
+      link: https://higher-order.fun/cn/2023/08/27/InstallHaskell.html
+- teacher: 张伟
+  date: 2025/09/12
+  slides:
+  - title: "第2章：初见函数式思维"
+    link: haskell/02_functional_thinking.html
+  assignment:
+    descriptions:
+    - text: 【2】本次课程无课后作业
+- teacher: 张伟
+  date: 2025/09/17
+  slides:
+  - title: "第3章：初见Haskell"
+    link: haskell/03_meet_haskell.html
+  assignment:
+    descriptions:
+    - text: 【3】完成课程讲义上的习题1~3
+      linktitle: HW2.hs
+      link: homeworks/HW2.hs
+    - text: 请使用提供的模板文件，对其的使用可以查看
+      linktitle: 此页面
+      link: /FP/2025/homeworks/HW2_README
+    - text: 请注意本次作业提交时，邮件主题应为“计算概论作业-2500012345-张三-2”
+    due: 2025/09/24 11:59AM
+- teacher: 张伟
+  date: 2025/09/19
+  slides:
+  - title: "第3章：初见Haskell"
+    link: haskell/03_meet_haskell.html
+  assignment:
+    descriptions:
+    - text: 【4】完成课程讲义上的习题4
+      linktitle: HW3.hs
+      link: homeworks/HW3.hs
+    - text: 本次作业需要安装random包，换源方法请查看
+      linktitle: 此页面
+      link: /FP/2025/homeworks/HW3_README
+    - text: 你可能需要 `randomRIO` 这个函数，用法为 `n <- randomRIO (1, 100)`
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-3”
+    due: 2025/09/24 11:59AM
+- teacher: 张伟
+  date: 2025/09/24
+  slides:
+  - title: "第4章：类型与类簇"
+    link: haskell/04_type_and_type_class.html
+  assignment:
+    descriptions:
+    - text: 【5】完成第4章课程讲义上的习题1-2
+      linktitle: HW4.hs
+      link: homeworks/HW4.hs
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-4”
+    due: 2025/10/08 11:59AM
+- teacher: 张伟
+  date: 2025/09/26
+  slides:
+  - title: "第5章：函数的定义"
+    link: haskell/05_function_definition.html
+  - title: "第6章：List Comprehension"
+    link: haskell/06_list_comprehension.html
+  - title: "第7章：递归函数"
+    link: haskell/07_recursive_function.html
+  assignment:
+    descriptions:
+    - text: 【6】完成第5,6,7章课程讲义上的习题
+      linktitle: HW5.hs
+      link: homeworks/HW5.hs
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-5”
+    - text: 本次作业模板有修改，请已经提交的同学重新提交一份
+    due: 2025/10/10 11:59PM
+- teacher: 张伟
+  date: 2025/10/10
+  slides:
+  - title: "第8章：高阶函数"
+    link: haskell/08_higher_order_function.html
+  assignment:
+    descriptions:
+    - text: 【7】完成第8章课程讲义上的习题
+      linktitle: HW6.hs
+      link: homeworks/HW6.hs
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-6”
+    due: 2025/10/15 11:59AM
+- teacher: 张伟
+  date: 2025/10/15
+  slides:
+  - title: "第9章：类型和类簇的声明/定义"
+    link: haskell/09_declaring_type_and_type_class.html
+  assignment:
+    descriptions:
+    - text: 【8】完成第9章课程讲义上的习题
+      linktitle: HW7.hs
+      link: homeworks/HW7.hs
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-7”
+    due: 2025/10/22 11:59AM
+- teacher: 张伟
+  date: 2025/10/17
+  slides:
+  - title: "第10章：An Example: The Countdown Problem"
+    link: haskell/10_countdown_problem.html
+  - title: "第11章：交互式程序设计"
+    link: haskell/11_interactive_programming.html
+  assignment:
+    descriptions:
+    - text: 【9】完成第10章课程讲义上的习题
+      linktitle: HW8.hs
+      link: homeworks/HW8.hs
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-8”
+    due: 2025/10/22 11:59AM
+- teacher: 张伟
+  date: 2025/10/22
+  slides:
+  - title: "第11章：交互式程序设计"
+    link: haskell/11_interactive_programming.html
+  - title: "第12章：Monads and More"
+    link: haskell/12_monad_and_more.html
+  assignment:
+    descriptions:
+    - text: 【10】完成第11章课程讲义上的习题，仅需要提交第一题的代码。
+      linktitle: HW9.hs
+      link: homeworks/HW9.hs
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-9”
+    due: 2025/10/29 11:59AM
+- teacher: 张伟
+  date: 2025/10/24
+  slides:
+  - title: "第12章：Monads and More"
+    link: haskell/12_monad_and_more.html
+  assignment:
+    descriptions:
+    - text: 【11】完成第12章课程讲义上的习题
+      linktitle: HW10.hs
+      link: homeworks/HW10.hs
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-10”
+    due: 2025/10/29 11:59AM
+- teacher: 张伟
+  date: 2025/10/29
+  slides:
+  - title: "第13章：Monadic Parser"
+    link: haskell/13_monadic_parser.html
+  assignment:
+    descriptions:
+    - text: 【12】完成第13章课程讲义上的习题
+      linktitle: HW11.hs
+      link: homeworks/HW11.hs
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-11”
+    due: 2025/11/7 11:59PM
+- teacher: 张伟
+  date: 2025/10/31
+  slides:
+  - title: "第14章：Foldables and Friends"
+    link: 第14章 foldables and friends.pdf
+  - title: "第15章：计算模型—Lazy Evaluation"
+    link: 第15章 lazy evaluation.pdf
+  assignment:
+    descriptions:
+    - text: 【13】完成第14、15章课程讲义上的习题。
+      linktitle: HW12.hs
+      link: homeworks/HW12.hs
+    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2400012345-张三-12”
+    due: 2025/11/7 11:59PM
+- teacher: 胡振江
+  date: 2025/11/12
+  slides:
+  - title: "Chapter 16: Introduction to Calculational Programming"
+    link: ch16_intro.pdf
+  - title: "Chapter 17: Basics of Agda"
+    link: ch17_agda_basics.pdf
+  assignment:
+    descriptions:
+    - text: 【14】完成第16章课程讲义上的习题。
+      link: homeworks/HW13.hs
+    - text: 【14】完成第17章课程讲义上的习题。
+      link: homeworks/HW13.agda
+    - text: 本次作业的两个文件都需要作为邮件的附件提交。请注意本次作业提交时，邮件标题应为： 计算概论作业-2500012345-张三-13
+    appendix:
+    - text: 如何安装 Agda 环境？
+      link: https://higher-order.fun/cn/2023/11/15/InstallAgda.html
+    due: 2025/11/19 11:59AM
+- teacher: 胡振江
+  date: 2025/11/19
+  slides:
+  - title: "Chapter 18: Natural Numbers in Agda"
+    link: ch18_agda_nat.pdf
+  - title: "Chapter 19: Lists in Agda"
+    link: ch19_agda_list.pdf
+  assignment:
+    descriptions:
+    - text: 【15】完成第18,19章课程讲义上的习题。
+      link: homeworks/HW14.agda
+    - text: 请注意本次作业提交时，邮件标题应为：计算概论作业-2500012345-张三-14
+    due: 2025/11/26 11:59AM
+- teacher: 胡振江
+  date: 2025/11/26
+  slides:
+  - title: "Chapter 20: Internal Verification"
+    link: ch20_internal.pdf
+  - title: "Chapter 21: Equality Theory"
+    link: ch21_equality.pdf
+  assignment:
+    descriptions:
+    - text: 【16】完成第20,21章课程讲义上的习题。
+      link: homeworks/HW15.agda
+    - text: 请注意本次作业提交时，邮件标题应为：计算概论作业-2500012345-张三-15
+    due: 2025/12/03 11:59AM
+- teacher: 胡振江
+  date: 2025/12/03
+  slides:
+  - title: "Chapter 22. Bird Meertens Formalism (BMF)"
+    link: Ch22.pdf
+  assignment:
+    descriptions:
+    - text: 【17】本次课程无课后作业
+- teacher: 胡振江
+  date: 2025/12/10
+  slides:
+  - title: "第23章：序列理论概述 (in Agda)"
+    link: Ch23_BMF_agda.pdf
+  assignment:
+    descriptions:
+    - text: 【18】完成第22章的BMF-1, BMF-2, BMF-3，以任何形式提交均可，同时完成第23章课程讲义上的习题。
+      link: homeworks/HW16.agda
+    - text: 请注意本次作业提交时，邮件标题应为：计算概论作业-2500012345-张三-16
+    - text: 本次作业提交时间将会延长一周。
+    due: 2025/12/24 11:59AM
+- teacher: 胡振江
+  date: 2024/12/17
+  slides:
+  - title: "Chapter 24. Homomorphism"
+    link: Ch24.pdf
+  assignment:
+    descriptions:
+    - text: 【19】完成第24章课程讲义上的BMF2-1习题。
+      link: homeworks/HW17.agda
+    - text: 请注意本次作业提交时，邮件标题应为：计算概论作业-2500012345-张三-17
+    due: 2025/12/24 11:59AM
+- teacher: 胡振江
+  date: 2025/12/19
+  slides:
+  - title: "Chapter 25: Fusion and Tupling"
+    link: Ch25.pdf
+  assignment:
+    descriptions:
+    - text: 【20】完成第24章课程讲义上的习题BMF2-2和BMF2-3以及25章课程讲义上的习题BMF3-2。
+      link: homeworks/HW18.hs
+    - text: 【20】完成第25章课程讲义上的习题BMF3-1。
+      link: homeworks/HW18.agda
+    - text: 本次作业的两个文件都需要作为邮件的附件提交。请注意本次作业提交时，邮件标题应为： 计算概论作业-2500012345-张三-18
+    due: 2025/12/24 11:59AM
+- teacher: 胡振江
+  date: 2025/12/24
+  slides:
+  - title: "Chapter 26. Automatic Parallelization"
+    link: Ch26.pdf
+  - title: "Chapter 27. Maximum Marking Problems"
+    link: Ch27.pdf
+  assignment:
+    descriptions:
+    - text: 【21】本次课程无课后作业。
+- teacher: 胡振江
+  date: 2025/12/26
+  slides:
+  - title: "Chapter 28. Unfold"
+    link: Ch28.pdf
+  - title: "Chapter 29. Hylomorphism and Metamorphism"
+    link: Ch29.pdf
+  assignment:
+    descriptions:
+    - text: 【22】完成第28章课程讲义上的习题BMF4-1和BMF4-2。
+      link: homeworks/HW19.agda
+    - text: 请注意本次作业提交时，邮件标题应为：计算概论作业-2500012345-张三-19
+    due: 2026/01/07 11:59AM
+updates: []
