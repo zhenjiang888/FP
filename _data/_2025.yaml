@@ -283,7 +283,7 @@ lectures:
   assignment:
     descriptions:
     - text: 【22】完成第28章课程讲义上的习题BMF4-1和BMF4-2。
-      link: homeworks/HW19.agda
+      link: homeworks/HW19.hs
     - text: 请注意本次作业提交时，邮件标题应为：计算概论作业-2500012345-张三-19
     due: 2026/01/07 11:59AM
 updates: []
