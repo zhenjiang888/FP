@@ -2,6 +2,23 @@ teaching_assistants:
 - 余泰来
 - 庄嘉毅
 
-lectures: []
+lectures:
+- teacher: 胡振江
+  date: 2026/09/09
+  slides:
+  - title: "导言：函数式程序设计"
+    link: intro.pdf
+  - title: "第1章：概论"
+    link: ch1.pdf
+  assignment:
+    descriptions:
+    - text: 【1】完成课程讲义上的习题
+    - text: 提交文件的名称、格式任意，可以是文本文档，不要求是可编译的 Haskell 程序
+    - text: 1-1 题请仿照第 1 章讲义 20 页以递等式形式给出 `product [2, 3, 4]` 的计算过程
+    - text: 请注意本次作业提交时，邮件主题应形如“计算概论作业-2600012345-张三-1”
+    due: 2026/09/26 11:59AM
+    appendix:
+    - text: 如何安装 Haskell 环境？
+      link: https://higher-order.fun/cn/2023/08/27/InstallHaskell.html
 
 updates: []
