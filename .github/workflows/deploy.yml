@@ -17,13 +17,39 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v5
 
-      - name: Setup mdBook
+      - name: Restore cached 2025 mdBook
+        id: cache-mdbook-2025
+        uses: actions/cache@v4
+        with:
+          path: 2025/slides/haskell
+          key: mdbook-2025-0.4.52-${{ hashFiles('2025/slides/_haskell/**') }}
+
+      - name: Setup mdBook 0.4.52 for 2025
+        if: steps.cache-mdbook-2025.outputs.cache-hit != 'true'
         uses: peaceiris/actions-mdbook@v2
         with:
           mdbook-version: '0.4.52'
 
       - name: Build mdBook for 2025
+        if: steps.cache-mdbook-2025.outputs.cache-hit != 'true'
         run: mdbook build 2025/slides/_haskell -d ../haskell
+
+      - name: Restore cached 2026 mdBook
+        id: cache-mdbook-2026
+        uses: actions/cache@v4
+        with:
+          path: 2026/slides/haskell
+          key: mdbook-2026-0.5.4-${{ hashFiles('2026/slides/_haskell/**') }}
+
+      - name: Setup mdBook 0.5.4 for 2026
+        if: steps.cache-mdbook-2026.outputs.cache-hit != 'true'
+        uses: peaceiris/actions-mdbook@v2
+        with:
+          mdbook-version: '0.5.4'
+
+      - name: Build mdBook for 2026
+        if: steps.cache-mdbook-2026.outputs.cache-hit != 'true'
+        run: mdbook build 2026/slides/_haskell -d 2026/slides/haskell
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
