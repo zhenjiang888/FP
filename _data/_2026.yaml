@@ -28,5 +28,20 @@ lectures:
   assignment:
     descriptions:
     - text: 【2】本次课程无课后作业
+- teacher: 张伟
+  date: 2025/09/16
+  slides:
+  - title: "第3章：初见Haskell"
+    link: haskell/03_meet_haskell.html
+  assignment:
+    descriptions:
+    - text: 【3】完成课程讲义上的习题1~3
+      linktitle: HW2.hs
+      link: homeworks/HW2.hs
+    - text: 请使用提供的模板文件，对其的使用可以查看
+      linktitle: 此页面
+      link: /FP/2026/homeworks/HW2_README
+    - text: 请注意本次作业提交时，邮件主题应为“计算概论作业-2600012345-张三-2”
+    due: 2026/09/23 11:59AM
 
 updates: []
