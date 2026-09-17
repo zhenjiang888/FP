@@ -12,6 +12,7 @@ and3 = _
 -- End Problem #1
 
 -- Problem #2: 给出函数 div 的一种或多种定义
+-- 不用考虑第二个参数为 0 的情况
 div1 :: Integer -> Integer -> Integer
 div1 = _
 
