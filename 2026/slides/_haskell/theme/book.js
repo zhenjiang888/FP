@@ -646,6 +646,19 @@ aria-label="Show hidden lines"></button>';
     }, { passive: true });
 })();
 
+// BEGIN mdBook 0.5.4 compatibility: zoomable images.
+// Keep this block together with the matching block in css/general.css.
+(function zoomableImages() {
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            for (const elem of Array.from(document.querySelectorAll('input.checkbox-img'))) {
+                elem.checked = false;
+            }
+        }
+    });
+})();
+// END mdBook 0.5.4 compatibility: zoomable images.
+
 (function chapterNavigation() {
     document.addEventListener('keydown', function(e) {
         if (e.altKey || e.ctrlKey || e.metaKey) {

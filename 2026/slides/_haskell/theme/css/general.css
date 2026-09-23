@@ -451,3 +451,90 @@ dd > p {
     /* Add some space between the icon and the text. */
     margin-right: 8px;
 }
+
+/* BEGIN mdBook 0.5.4 compatibility: zoomable images.
+   Keep this block together with the matching code in theme/book.js. */
+
+/* Make the checkbox invisible while keeping it keyboard-accessible. */
+.content .checkbox-img {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.content .checkbox-img:focus + img {
+    outline: auto;
+}
+
+/* Hide the enlarged copy until the image is activated. */
+.content .checkbox-img:not(:checked) ~ .img-wrapper {
+    display: none;
+}
+
+.content .checkbox-label {
+    display: block;
+    max-width: 100%;
+}
+
+.content .checkbox-label img {
+    cursor: zoom-in;
+}
+
+.content .checkbox-img:checked ~ .img-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: zoom-out;
+}
+
+.content .checkbox-img:checked ~ .img-wrapper > img {
+    --img-padding: 5px;
+    padding: var(--img-padding);
+    background: #999;
+    cursor: zoom-out;
+    max-width: calc(100% - (var(--img-padding) * 2));
+    max-height: calc(100% - (var(--img-padding) * 2));
+}
+/* END mdBook 0.5.4 compatibility: zoomable images. */
+
+/* BEGIN course image sizing utilities. */
+.course-image .checkbox-label > img,
+.course-image > p > img {
+    display: block;
+    height: auto;
+    margin-inline: auto;
+}
+
+.course-image[data-width="30"] .checkbox-label > img,
+.course-image[data-width="30"] > p > img {
+    width: 30%;
+}
+
+.course-image[data-width="60"] .checkbox-label > img,
+.course-image[data-width="60"] > p > img {
+    width: 60%;
+}
+
+.course-image[data-width="75"] .checkbox-label > img,
+.course-image[data-width="75"] > p > img {
+    width: 75%;
+}
+
+.course-image[data-width="80"] .checkbox-label > img,
+.course-image[data-width="80"] > p > img {
+    width: 80%;
+}
+/* END course image sizing utilities. */
