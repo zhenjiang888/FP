@@ -39,13 +39,17 @@ jobs:
         uses: actions/cache@v4
         with:
           path: 2026/slides/haskell
-          key: mdbook-2026-0.5.4-${{ hashFiles('2026/slides/_haskell/**') }}
+          key: mdbook-2026-0.5.4-katex-0.10.0-${{ hashFiles('2026/slides/_haskell/**') }}
 
       - name: Setup mdBook 0.5.4 for 2026
         if: steps.cache-mdbook-2026.outputs.cache-hit != 'true'
         uses: peaceiris/actions-mdbook@v2
         with:
           mdbook-version: '0.5.4'
+
+      - name: Install mdBook KaTeX 0.10.0 for 2026
+        if: steps.cache-mdbook-2026.outputs.cache-hit != 'true'
+        run: cargo install mdbook-katex --version 0.10.0 --locked
 
       - name: Build mdBook for 2026
         if: steps.cache-mdbook-2026.outputs.cache-hit != 'true'

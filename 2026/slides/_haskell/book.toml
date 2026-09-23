@@ -1,4 +1,8 @@
 [book]
 title = "Programming Haskell"
-authors = ["caturn"]
+authors = ["nrutas"]
 language = "en"
+
+[preprocessor.katex]
+after = ["links"]
+inline-delimiter = { left = "-$", right = "$-" }

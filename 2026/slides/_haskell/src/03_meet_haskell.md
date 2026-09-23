@@ -624,7 +624,7 @@ main = do
   
   - 这个模块对外输出了一个名称为 `main` 的元素
   
-  - 这个模块中定义的元素出现在`where`之后
+  - 这个模块中定义的元素出现在 `where` 之后
 
 > **Haskell 中的模块**
 >
@@ -730,7 +730,7 @@ main = do
     >
     > - 为什么 `main` 的类型不是函数呢？
     >
-    >   C/C++/Java/Rust语言的main都是函数。
+    >   C/C++/Java/Rust 语言的 main 都是函数。
     >
     > **唐僧：**
     >
@@ -759,7 +759,7 @@ main = do
 
   - 这个 IO 运算中仅包含了一个 IO action，即：在控制台输出一串字符
 
-  - 如果你愿意，可以继续添加一个IO action:
+  - 如果你愿意，可以继续添加一个 IO action:
   
     `putStrLn "Hello, World! AGAIN"`
   
@@ -884,6 +884,7 @@ main = do
 > - 这些工具又被称为程序设计语言的 **工具链** (toolchain)
 
 在本节中，我们主要介绍 Haskell 语言工具链中的三个基本工具：
+
 1. GHC (Glasgow Haskell Compiler)：
 
    - 一种得到广泛使用的Haskell语言编译器
@@ -918,7 +919,7 @@ main = do
 >
 > - 作用：把一个合法的 Haskell 程序转换/编译为在当前计算机上可运行的二进制程序
 
-**Step 1：** 把下面的程序代码放置到某个文件夹下的`Main.hs`文件中
+**Step 1：** 把下面的程序代码放置到某个文件夹下的 `Main.hs` 文件中
 
 ```haskell
 -- This is my first Haskell program
@@ -1512,7 +1513,7 @@ Haskell 提供了两种源程序的书写方式：
   >
   > main :: I0 ()
   > main = do
-  >     putstrun "Hello, World!"
+  >     putStrLn "Hello, World!"
 
   This is the end.
   ```
