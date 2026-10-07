@@ -29,7 +29,7 @@ lectures:
     descriptions:
     - text: 【2】本次课程无课后作业
 - teacher: 张伟
-  date: 2025/09/16
+  date: 2026/09/16
   slides:
   - title: "第3章：初见Haskell"
     link: haskell/03_meet_haskell.html
@@ -44,7 +44,7 @@ lectures:
     - text: 请注意本次作业提交时，邮件主题应为“计算概论作业-2600012345-张三-2”
     due: 2026/09/23 11:59AM
 - teacher: 张伟
-  date: 2025/09/18
+  date: 2026/09/18
   slides:
   - title: "第3章：初见Haskell"
     link: haskell/03_meet_haskell.html
@@ -55,12 +55,12 @@ lectures:
       link: homeworks/HW3.hs
     - text: 本次作业需要安装random包，相关包管理器操作及换源方法请查看
       linktitle: 此页面
-      link: /FP/2025/homeworks/HW3_README
+      link: /FP/2026/homeworks/HW3_README
     - text: 你可能需要 `randomRIO` 这个函数，用法为 `n <- randomRIO (1, 100)`
     - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2600012345-张三-3”
-    due: 2025/09/23 11:59AM
+    due: 2026/09/23 11:59AM
 - teacher: 张伟
-  date: 2025/09/23
+  date: 2026/09/23
   slides:
   - title: "第4章：类型与类簇"
     link: haskell/04_type_and_type_class.html
@@ -70,9 +70,9 @@ lectures:
       linktitle: HW4.hs
       link: homeworks/HW4.hs
     - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2600012345-张三-4”
-    due: 2025/09/30 11:59AM
+    due: 2026/09/30 11:59AM
 - teacher: 张伟
-  date: 2025/09/30
+  date: 2026/09/30
   slides:
   - title: "第5章：函数的定义"
     link: haskell/05_function_definition.html
@@ -87,6 +87,6 @@ lectures:
       link: homeworks/HW5.hs
     - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2600012345-张三-5”
     - text: 本次作业模板有修改，请已经提交的同学重新提交一份
-    due: 2025/10/14 11:59PM
+    due: 2026/10/14 11:59PM
 
 updates: []
