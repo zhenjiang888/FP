@@ -107,10 +107,6 @@ lectures:
     link: haskell/09_declaring_type_and_type_class.html
   assignment:
     descriptions:
-    - text: 【8】完成第9章课程讲义上的习题
-      linktitle: HW7.hs
-      link: homeworks/HW7.hs
-    - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2600012345-张三-7”
-    due: 2026/10/21 11:59AM
+    - text: 本次课程无课后作业
 
 updates: []
