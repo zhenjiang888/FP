@@ -10,3 +10,5 @@
 - [高阶函数](./08_higher_order_function.md)
 - [声明类型和类簇](./09_declaring_type_and_type_class.md)
 - [案例 Countdown 问题](./10_countdown_problem.md)
+- [交互式程序设计](./11_interactive_programming.md)
+- [Monad and More](./12_monad_and_more.md)
