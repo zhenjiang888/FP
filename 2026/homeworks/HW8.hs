@@ -1,4 +1,4 @@
-module HW9 where
+module HW8 where
 
 adder :: IO ()
 adder = _
