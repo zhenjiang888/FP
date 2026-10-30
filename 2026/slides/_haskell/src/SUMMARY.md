@@ -13,3 +13,4 @@
 - [交互式程序设计](./11_interactive_programming.md)
 - [Monad and More](./12_monad_and_more.md)
 - [Monadic Parser](./13_monadic_parser.md)
+- [范畴论基础概念](./appendix_01_category_theory_20261030.md)

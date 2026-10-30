@@ -165,6 +165,8 @@ lectures:
     link: 第14章 foldables and friends.pdf
   - title: "第15章：计算模型—Lazy Evaluation"
     link: 第15章 lazy evaluation.pdf
+  - title: "范畴论基础概念"
+    link: haskell/appendix_01_category_theory_20261030.md
   assignment:
     descriptions:
     - text: 【13】完成第14、15章课程讲义上的习题。
