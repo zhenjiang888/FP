@@ -174,5 +174,23 @@ lectures:
       link: homeworks/HW10.hs
     - text: 请注意本次作业提交时，邮件标题应为“计算概论作业-2600012345-张三-10”
     due: 2026/11/6 11:59PM
+- teacher: 胡振江
+  date: 2026/11/11
+  slides:
+  - title: "Chapter 16: Introduction to Calculational Programming"
+    link: ch16_intro.pdf
+  - title: "Chapter 17: Basics of Agda"
+    link: ch17_agda_basics.pdf
+  assignment:
+    descriptions:
+    - text: 【14】完成第16章课程讲义上的习题。
+      link: homeworks/HW11.hs
+    - text: 【14】完成第17章课程讲义上的习题。
+      link: homeworks/HW11.agda
+    - text: 本次作业的两个文件都需要作为邮件的附件提交。请注意本次作业提交时，邮件标题应为： 计算概论作业-2600012345-张三-11
+    appendix:
+    - text: 如何安装 Agda 环境？。
+      link: https://blog.wybxc.cc/FP-extra/install-agda/
+    due: 2026/11/18 11:59AM
 
 updates: []
